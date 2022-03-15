@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import {
+  Link as RouterLink,
+  Route,
+  Routes,
+  useLocation,
+} from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -11,10 +16,11 @@ import FeedbackIcon from '@mui/icons-material/Feedback';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Container from '@mui/material/Container';
-import SwipeableViews from 'react-swipeable-views';
+import SwipeableRoutes from './SwipeableRoutes';
 
 function App() {
-  const [value, setValue] = useState(0);
+  const location = useLocation();
+  const [value, setValue] = useState(location.pathname);
 
   return (
     <>
@@ -61,15 +67,57 @@ function App() {
           variant="fullWidth"
           textColor="inherit"
         >
-          <Tab label="Reference" component={RouterLink} to="/" />
-          <Tab label="Quiz" component={RouterLink} to="/quiz" />
+          <Tab value="/" label="Reference" component={RouterLink} to="/" />
+          <Tab value="/quiz" label="Quiz" component={RouterLink} to="/quiz" />
         </Tabs>
       </AppBar>
       <Container>
-        <SwipeableViews index={value} onChangeIndex={(i) => setValue(i)}>
+        <SwipeableRoutes>
+          {/* <div>reference</div>
+          <div>quiz</div> */}
+          <Route
+            path="/"
+            element={
+              <div
+                style={{
+                  width: '800px',
+                  height: '300px',
+                  backgroundColor: 'salmon',
+                }}
+              >
+                reference
+              </div>
+            }
+          />
+          <Route
+            path="/quiz"
+            element={
+              <div
+                style={{
+                  width: '800px',
+                  height: '300px',
+                  backgroundColor: 'royalblue',
+                }}
+              >
+                quiz
+              </div>
+            }
+          />
+          {/* <Route path="/" element="reference" />
+          <Route path="/quiz" element="quiz" /> */}
+        </SwipeableRoutes>
+        {/* <SwipeableViews index={value} onChangeIndex={(i) => setValue(i)}>
           <div>batman</div>
           <div>joker</div>
-        </SwipeableViews>
+        </SwipeableViews> */}
+        {/* <SwipeableRoutes>
+          <Route path="/">
+            <div>batman</div>
+          </Route>
+          <Route path="/quiz">
+            <div>quiz</div>
+          </Route>
+        </SwipeableRoutes> */}
       </Container>
     </>
   );
