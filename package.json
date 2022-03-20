@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port 3130",
     "build": "tsc && vite build",
+    "prepreview": "yarn run build",
     "preview": "vite preview",
     "predeploy": "yarn run build --base='/HIST130-Quiz/'",
     "deploy": "yarn run gh-pages --dist dist --branch public"
@@ -27,6 +28,7 @@
     "@vitejs/plugin-react": "^1.0.7",
     "gh-pages": "^3.2.3",
     "typescript": "^4.5.4",
-    "vite": "^2.8.6"
+    "vite": "^2.8.6",
+    "vite-tsconfig-paths": "^3.4.1"
   }
 }
