@@ -1,135 +1,19 @@
-import Collection from 'src/components/Collection';
-import DefinitionCard from 'src/components/DefinitionCard';
+import { useChapters } from 'src/api';
+import Chapter from 'src/components/Chapter';
 
 function Reference() {
+  const { isLoading, error, data: chapters } = useChapters();
+
+  if (isLoading) return <div>loading chapters...</div>;
+
+  if (error) return <div>Error: {error.message}</div>;
+
   return (
+    // wrapped in a fragment, otherwise Typescript whines
     <>
-      <Collection header="Chapter 1">
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-      </Collection>
-      <Collection header="Chapter 2">
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-      </Collection>
-      <Collection header="Chapter 3">
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-        <DefinitionCard
-          id={1}
-          title="Title here"
-          subheader="Subheader here"
-          text="lorem ipsum dolor sit amet conspicing delectetur."
-          isFavourite
-          onBookmark={() => {}}
-        />
-      </Collection>
+      {chapters?.map((chapter) => (
+        <Chapter key={chapter.id} chapter={chapter} />
+      ))}
     </>
   );
 }

@@ -1,0 +1,681 @@
+[
+  {
+    "id": 0,
+    "term": "Beringia",
+    "pageNumber": 5,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 1,
+    "term": "Paleo-Indians",
+    "pageNumber": 5,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 2,
+    "term": "Clovis point",
+    "pageNumber": 6,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 3,
+    "term": "hunter-gatherer",
+    "pageNumber": 7,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 4,
+    "term": "Archaic Indians",
+    "pageNumber": 7,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 5,
+    "term": "pueblos",
+    "pageNumber": 11,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 6,
+    "term": "Pueblo Bonito",
+    "pageNumber": 11,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 7,
+    "term": "burial mounds",
+    "pageNumber": 12,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 8,
+    "term": "chiefdom",
+    "pageNumber": 12,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 9,
+    "term": "Cahokia",
+    "pageNumber": 13,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 10,
+    "term": "Mexica",
+    "pageNumber": 18,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 11,
+    "term": "tribute",
+    "pageNumber": 19,
+    "text": "",
+    "chapterId": 0
+  },
+  {
+    "id": 12,
+    "term": "Black Death",
+    "pageNumber": 25,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 13,
+    "term": "Reconquest",
+    "pageNumber": 27,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 14,
+    "term": "Tainos",
+    "pageNumber": 29,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 15,
+    "term": "Treaty of Torsedillas",
+    "pageNumber": 30,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 16,
+    "term": "Columbian exchange",
+    "pageNumber": 32,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 17,
+    "term": "conquistadors",
+    "pageNumber": 35,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 18,
+    "term": "Incan empire",
+    "pageNumber": "5",
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 19,
+    "term": "Acoma pueblo revolt",
+    "pageNumber": 36,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 20,
+    "term": "New Spain",
+    "pageNumber": 36,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 21,
+    "term": "encomienda",
+    "pageNumber": 38,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 22,
+    "term": "creoles",
+    "pageNumber": 40,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 23,
+    "term": "Protestant Reformation",
+    "pageNumber": 42,
+    "text": "",
+    "chapterId": 1
+  },
+  {
+    "id": 24,
+    "term": "Virginia Company",
+    "pageNumber": 49,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 25,
+    "term": "Jamestown",
+    "pageNumber": 49,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 26,
+    "term": "Algonquian Indians",
+    "pageNumber": 50,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 27,
+    "term": "royal colony",
+    "pageNumber": 52,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 28,
+    "term": "House of Burgesses",
+    "pageNumber": 53,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 29,
+    "term": "indentured servants",
+    "pageNumber": 56,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 30,
+    "term": "headright",
+    "pageNumber": 57,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 31,
+    "term": "Navigation Acts",
+    "pageNumber": 61,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 32,
+    "term": "Bacon's Rebellion",
+    "pageNumber": 61,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 33,
+    "term": "slavery",
+    "pageNumber": 63,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 34,
+    "term": "Pueblo revolt",
+    "pageNumber": 64,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 35,
+    "term": "Barbados",
+    "pageNumber": 64,
+    "text": "",
+    "chapterId": 2
+  },
+  {
+    "id": 36,
+    "term": "English Reformation",
+    "pageNumber": 74,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 37,
+    "term": "Puritans",
+    "pageNumber": 74,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 38,
+    "term": "Separatists",
+    "pageNumber": 75,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 39,
+    "term": "Calvinism",
+    "pageNumber": 79,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 40,
+    "term": "predestination",
+    "pageNumber": 79,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 41,
+    "term": "visible saints",
+    "pageNumber": 79,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 42,
+    "term": "antinomians",
+    "pageNumber": 81,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 43,
+    "term": "Puritan Revolution",
+    "pageNumber": 82,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 44,
+    "term": "Halfway Covenant",
+    "pageNumber": 84,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 45,
+    "term": "Quakers",
+    "pageNumber": 84,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 46,
+    "term": "New Netherland",
+    "pageNumber": 86,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 47,
+    "term": "Kind Philip's War",
+    "pageNumber": 92,
+    "text": "",
+    "chapterId": 3
+  },
+  {
+    "id": 48,
+    "term": "natural increase",
+    "pageNumber": 99,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 49,
+    "term": "partible inheritance",
+    "pageNumber": 101,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 50,
+    "term": "Pennsylvania Dutch",
+    "pageNumber": 104,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 51,
+    "term": "Scots-Irish",
+    "pageNumber": 105,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 52,
+    "term": "redemptioners",
+    "pageNumber": 105,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 53,
+    "term": "Middle Passage",
+    "pageNumber": 109,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 54,
+    "term": "new Negroes",
+    "pageNumber": 111,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 55,
+    "term": "Stono Rebellion",
+    "pageNumber": 113,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 56,
+    "term": "task system",
+    "pageNumber": 113,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 57,
+    "term": "Enlightenment",
+    "pageNumber": 116,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 58,
+    "term": "Great Awakening",
+    "pageNumber": 117,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 59,
+    "term": "presidios",
+    "pageNumber": 119,
+    "text": "",
+    "chapterId": 4
+  },
+  {
+    "id": 60,
+    "term": "Seven Year's War",
+    "pageNumber": 127,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 61,
+    "term": "Pontiac's Rebellion",
+    "pageNumber": 132,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 62,
+    "term": "Sugar (Revenue) Act",
+    "pageNumber": 134,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 63,
+    "term": "Stamp Act",
+    "pageNumber": 134,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 64,
+    "term": "virtual representation",
+    "pageNumber": 135,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 65,
+    "term": "Declaratory Act",
+    "pageNumber": 138,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 66,
+    "term": "Townshend duties",
+    "pageNumber": 138,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 67,
+    "term": "Boston Massacre",
+    "pageNumber": 141,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 68,
+    "term": "commitees of correspondence",
+    "pageNumber": 142,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 69,
+    "term": "Tea Act of 1773",
+    "pageNumber": 142,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 70,
+    "term": "Coercive (Intolerable) Acts",
+    "pageNumber": 143,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 71,
+    "term": "First Continental Congress",
+    "pageNumber": 145,
+    "text": "",
+    "chapterId": 5
+  },
+  {
+    "id": 72,
+    "term": "Second Continental Congress",
+    "pageNumber": 154,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 73,
+    "term": "Continental Army",
+    "pageNumber": 155,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 74,
+    "term": "battle of Bunker Bill",
+    "pageNumber": 155,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 75,
+    "term": "Common Sense",
+    "pageNumber": 157,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 76,
+    "term": "Declaration of Independance",
+    "pageNumber": 158,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 77,
+    "term": "battle of Long Island",
+    "pageNumber": 162,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 78,
+    "term": "Ladies Association",
+    "pageNumber": 163,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 79,
+    "term": "loyalists",
+    "pageNumber": 164,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 80,
+    "term": "battle of Oriskany",
+    "pageNumber": 169,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 81,
+    "term": "battle of Saratoga",
+    "pageNumber": 169,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 82,
+    "term": "battle of Yorktown",
+    "pageNumber": 177,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 83,
+    "term": "Treaty (Peace) of Paris, 1783",
+    "pageNumber": 177,
+    "text": "",
+    "chapterId": 6
+  },
+  {
+    "id": 84,
+    "term": "Articles of Confederation",
+    "pageNumber": 183,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 85,
+    "term": "republicanism",
+    "pageNumber": 187,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 86,
+    "term": "gradual emancipation",
+    "pageNumber": 190,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 87,
+    "term": "Newburgh Conspiracy",
+    "pageNumber": 191,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 88,
+    "term": "Treaty of Fort Stanwix",
+    "pageNumber": 193,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 89,
+    "term": "Northwest Ordinance",
+    "pageNumber": 194,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 90,
+    "term": "Shay's Rebellion",
+    "pageNumber": 197,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 91,
+    "term": "Virginia Plan",
+    "pageNumber": 198,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 92,
+    "term": "New Jersey Plan",
+    "pageNumber": 199,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 93,
+    "term": "United States Constitution",
+    "pageNumber": 199,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 94,
+    "term": "three-fifths clause",
+    "pageNumber": 199,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 95,
+    "term": "Federalists",
+    "pageNumber": 201,
+    "text": "",
+    "chapterId": 7
+  },
+  {
+    "id": 96,
+    "term": "Antifederalists",
+    "pageNumber": 202,
+    "text": "",
+    "chapterId": 7
+  }
+]

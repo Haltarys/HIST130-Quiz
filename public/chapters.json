@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "title": "Chapter 1",
+    "subtitle": "Ancient America",
+    "period": "Before 1492",
+    "pageNumber": 1
+  },
+  {
+    "id": 1,
+    "title": "Chapter 2",
+    "subtitle": "Europeans Encounter the New World",
+    "period": "1492-1600",
+    "pageNumber": 23
+  },
+  {
+    "id": 2,
+    "title": "Chapter 3",
+    "subtitle": "The Southern Colonies in the Seventeenth Century",
+    "period": "1601-1700",
+    "pageNumber": 47
+  },
+  {
+    "id": 3,
+    "title": "Chapter 4",
+    "subtitle": "The Northern Colonies in the Seventeenth Century",
+    "period": "1601-1700",
+    "pageNumber": 72
+  },
+  {
+    "id": 4,
+    "title": "Chapter 5",
+    "subtitle": "Colonial America in the Eighteenth Century",
+    "period": "1701-1770",
+    "pageNumber": 97
+  },
+  {
+    "id": 5,
+    "title": "Chapter 6",
+    "subtitle": "The British Empire and the Colonial Crisis",
+    "period": "1754-1775",
+    "pageNumber": 125
+  },
+  {
+    "id": 6,
+    "title": "Chapter 7",
+    "subtitle": "The War for America",
+    "period": "1775-1783",
+    "pageNumber": 152
+  },
+  {
+    "id": 7,
+    "title": "Chapter 8",
+    "subtitle": "Building a Republic",
+    "period": "1775-1789",
+    "pageNumber": 181
+  }
+]

@@ -1,22 +1,28 @@
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Container from '@mui/material/Container';
-import SwipeableRoutes from 'src/components/SwipeableRoutes';
 import Reference from 'src/pages/Reference';
 import Favourites from 'src/pages/Favourites';
 import Quiz from 'src/pages/Quiz';
+import MySwipeableRoutes from './components/MySwipeableRoutes';
 
 function Body() {
   return (
     <Container
       maxWidth="xl"
-      sx={{ marginTop: 1 }} // To leave some room for the Appbar's shadow
       component="main"
+      // CSS magic to put the scrollbar under the navbar and not next to it
+      // sx={{ flex: 1, overflowY: 'auto' }}
     >
-      <SwipeableRoutes>
+      {/* <Routes>
         <Route path="/" element={<Reference />} />
         <Route path="/favourites" element={<Favourites />} />
         <Route path="/quiz" element={<Quiz />} />
-      </SwipeableRoutes>
+      </Routes> */}
+      <MySwipeableRoutes>
+        <Route path="/" element={<Reference />} />
+        <Route path="/favourites" element={<Favourites />} />
+        <Route path="/quiz" element={<Quiz />} />
+      </MySwipeableRoutes>
     </Container>
   );
 }

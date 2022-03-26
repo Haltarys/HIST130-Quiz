@@ -8,6 +8,7 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -17,7 +18,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "src": ["src/*"]
+      "src": ["./src"]
     }
   },
   "include": ["src"],
