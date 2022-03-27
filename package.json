@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite --port 3130",
     "build": "tsc && vite build",
-    "prepreview": "yarn run build",
     "preview": "vite preview",
     "predeploy": "yarn run build --base='/HIST130-Quiz/'",
     "deploy": "yarn run gh-pages --dist dist --branch public"
@@ -16,6 +15,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.0",
     "@mui/material": "^5.5.0",
+    "axios": "^0.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "^3.34.17",
