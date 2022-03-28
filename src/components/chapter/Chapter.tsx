@@ -1,4 +1,5 @@
-import { Chapter as ChapterType, useDefinitions } from 'src/api';
+import { useDefinitions } from 'src/api';
+import type { Chapter as ChapterType } from 'src/api';
 import { useStore } from 'src/store';
 import ChapterHeader from './ChapterHeader';
 import Collection from 'src/components/card/Collection';
