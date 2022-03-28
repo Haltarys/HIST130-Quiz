@@ -1,9 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Container from '@mui/material/Container';
-import Reference from 'src/pages/Reference';
-import Favourites from 'src/pages/Favourites';
-import Quiz from 'src/pages/Quiz';
-import MySwipeableRoutes from './components/MySwipeableRoutes';
+import Routes from 'src/components/routes';
+import { Favourites, Quiz, Reference } from 'src/pages';
 
 function Body() {
   return (
@@ -18,11 +16,11 @@ function Body() {
         <Route path="/favourites" element={<Favourites />} />
         <Route path="/quiz" element={<Quiz />} />
       </Routes> */}
-      <MySwipeableRoutes>
+      <Routes>
         <Route path="/" element={<Reference />} />
         <Route path="/favourites" element={<Favourites />} />
         <Route path="/quiz" element={<Quiz />} />
-      </MySwipeableRoutes>
+      </Routes>
     </Container>
   );
 }

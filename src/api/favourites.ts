@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import type { ID } from 'src/api';
+import type { ID } from './types';
 
 function retrieveFavouritesFromLocalStorage(): ID[] {
   // read the favourited definitions from localStorage and parse them into a Set

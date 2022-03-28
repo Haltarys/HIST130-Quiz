@@ -2,7 +2,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 
-function NavTabs() {
+function NavbarTabs() {
   const location = useLocation();
 
   return (
@@ -25,4 +25,4 @@ function NavTabs() {
   );
 }
 
-export default NavTabs;
+export default NavbarTabs;
