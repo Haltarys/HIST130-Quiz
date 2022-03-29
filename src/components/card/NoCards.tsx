@@ -1,4 +1,4 @@
-import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
+import SailingIcon from '@mui/icons-material/Sailing';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom';
@@ -20,7 +20,7 @@ function NoCardsMessage() {
         padding: 2,
       }}
     >
-      <SentimentVeryDissatisfiedIcon color="secondary" sx={{ fontSize: 96 }} />
+      <SailingIcon color="secondary" sx={{ fontSize: 96 }} />
       <Typography variant="h4" color="secondary">
         Nothing favourites found.
       </Typography>
