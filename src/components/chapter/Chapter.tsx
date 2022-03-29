@@ -1,11 +1,9 @@
 import type { Chapter as ChapterType } from 'src/api';
 import { useDefinitions } from 'src/api';
 import { useStore } from 'src/store';
-import DefinitionCard, {
-  Collection,
-  LoadingDefinitionCard,
-} from 'src/components/card';
+import DefinitionCard, { Collection } from 'src/components/card';
 import ChapterHeader from './ChapterHeader';
+import { LoadingDefinitionCard } from 'src/components/loading';
 import { range } from 'src/utils';
 
 interface ChapterProps {
