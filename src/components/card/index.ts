@@ -1,3 +1,3 @@
 export { default as Collection } from './Collection';
-export { default as NoCards } from './NoCards';
+export { default as NoFavourites } from './NoFavourites';
 export { default } from './DefinitionCard';

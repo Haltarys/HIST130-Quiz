@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom';
 import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
 
-function NoCardsMessage() {
+function NoFavourites() {
   return (
     // Using Typography instead of Box because the color doesn't propagate otherwise.
     <Typography
@@ -41,4 +41,4 @@ function NoCardsMessage() {
   );
 }
 
-export default NoCardsMessage;
+export default NoFavourites;
