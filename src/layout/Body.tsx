@@ -8,6 +8,7 @@ function Body() {
     <Container
       maxWidth="xl"
       component="main"
+      sx={{ marginY: 2 }}
       // CSS magic to put the scrollbar under the navbar and not next to it
       // sx={{ flex: 1, overflowY: 'auto' }}
     >
