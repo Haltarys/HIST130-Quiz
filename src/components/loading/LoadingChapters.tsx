@@ -1,19 +1,13 @@
 import { Collection } from 'src/components/card';
-import LoadingDefinitionCard from './LoadingDefinitionCard';
 import { range } from 'src/utils';
+import LoadingCardList from './LoadingCardList';
 
-interface LoadingChaptersProps {
-  numberOfPlaceholders?: number;
-}
-
-function LoadingChapters({ numberOfPlaceholders = 12 }: LoadingChaptersProps) {
+function LoadingChapters() {
   return (
     <>
       {range(2).map((_, i) => (
         <Collection key={i} header={undefined}>
-          {range(numberOfPlaceholders).map((_, i) => (
-            <LoadingDefinitionCard key={i} />
-          ))}
+          <LoadingCardList />
         </Collection>
       ))}
     </>
