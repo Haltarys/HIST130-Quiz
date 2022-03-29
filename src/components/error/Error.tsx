@@ -7,6 +7,7 @@ interface ErrorProps {
 
 function Error({ children }: ErrorProps) {
   return (
+    // Using Typography instead of Box because the color doesn't propagate otherwise.
     <Typography
       color="error"
       // Rendered as a div because React complains that headers (<h6>) must not be rendered inside a <p> tag (default value.)

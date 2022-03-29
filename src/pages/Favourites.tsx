@@ -3,6 +3,7 @@ import { useStore } from 'src/store';
 import Error from 'src/components/error';
 import DefinitionCard, { Collection } from 'src/components/card';
 import { LoadingCardList } from 'src/components/loading';
+import { NoCards } from 'src/components/card';
 
 function Favourites() {
   const { isLoading, error, data: definitions } = useDefinitions();
@@ -18,8 +19,8 @@ function Favourites() {
     <Collection header="Favourites">
       {isLoading ? (
         <LoadingCardList />
-      ) : (
-        favourites?.map((definition) => (
+      ) : favourites && favourites.length > 0 ? (
+        favourites.map((definition) => (
           <DefinitionCard
             key={definition.id}
             definition={definition}
@@ -31,6 +32,8 @@ function Favourites() {
             onBookmark={onBookmark}
           />
         ))
+      ) : (
+        <NoCards />
       )}
     </Collection>
   );

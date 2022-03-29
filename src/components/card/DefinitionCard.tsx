@@ -30,11 +30,7 @@ function DefinitionCard({
         <CardHeader title={definition.term} subheader={subheader} />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            {
-              // TODO: remove lorem ipsum
-              definition.text ||
-                'lorem ipsum dolor sit amet conspicing delectetur.'
-            }
+            {definition.text}
           </Typography>
         </CardContent>
         <CardActions>
