@@ -8,6 +8,7 @@ import StoreProvider from './store';
 import theme from './theme';
 import { baseURL, queryClient } from './api';
 import App from './App';
+import './styles/globals.css';
 
 ReactDOM.render(
   <React.StrictMode>
