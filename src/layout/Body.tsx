@@ -12,8 +12,6 @@ function Body() {
       sx={{
         // use padding instead of margin to make the scrollbar stretch all the way
         paddingY: 2,
-        flex: 1,
-        overflowY: 'auto',
       }}
     >
       <Routes>
