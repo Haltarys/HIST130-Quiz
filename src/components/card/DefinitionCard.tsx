@@ -8,7 +8,6 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-import grey from '@mui/material/colors/grey';
 import type { Definition as DefinitionType, ID } from 'src/api';
 
 interface DefinitionCardProps {
@@ -25,8 +24,15 @@ function DefinitionCard({
   onBookmark,
 }: DefinitionCardProps) {
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3}>
-      <Card sx={{ backgroundColor: grey['100'] }}>
+    <Grid item xs={12} sm={6} md={4} lg={3} display="flex">
+      <Card
+        elevation={2}
+        sx={{
+          ':hover': {
+            boxShadow: 24,
+          },
+        }}
+      >
         <CardHeader title={definition.term} subheader={subheader} />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
