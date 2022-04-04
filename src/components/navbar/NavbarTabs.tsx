@@ -5,9 +5,13 @@ import Tabs from '@mui/material/Tabs';
 function NavbarTabs() {
   const location = useLocation();
 
+  const value = ['/', '/favourites', '/quiz'].includes(location.pathname)
+    ? location.pathname
+    : false;
+
   return (
     <Tabs
-      value={location.pathname}
+      value={value}
       indicatorColor="secondary"
       variant="fullWidth"
       textColor="inherit"
