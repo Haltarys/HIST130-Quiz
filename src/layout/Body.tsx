@@ -11,8 +11,6 @@ function Body() {
       // CSS magic to put the scrollbar under the navbar and not next to it
       sx={{
         height: '100%',
-        display: 'grid',
-        placeItems: 'center',
         // use padding instead of margin to make the scrollbar stretch all the way
         paddingY: 3,
       }}
