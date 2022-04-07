@@ -31,7 +31,7 @@ function DefinitionCard({
           display: 'flex',
           flexDirection: 'column',
           ':hover': {
-            boxShadow: 24,
+            boxShadow: 8,
           },
         }}
       >
