@@ -10,14 +10,15 @@ function EmailField({ control }: FieldProps) {
       control={control}
       name="email"
       defaultValue=""
-      render={({ field }) => (
+      render={({ field, fieldState: { invalid, error } }) => (
         <TextField
           {...field}
           variant="outlined"
-          id="email"
           label="Email address (optional)"
           type="email"
           placeholder="Only required if you want me to get back to you."
+          error={invalid}
+          helperText={invalid && error}
           fullWidth
           margin="normal"
           InputProps={{
