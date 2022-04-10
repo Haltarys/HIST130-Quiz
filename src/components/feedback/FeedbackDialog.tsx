@@ -4,7 +4,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import { FeedbackFormData, sendFeedback } from 'src/api';
+import { FeedbackFormData, FeedbackEmailResponse, sendFeedback } from 'src/api';
 import {
   CancelButton,
   EmailField,
@@ -12,6 +12,7 @@ import {
   ObjectField,
   SubmitButton,
 } from './atoms';
+import FeedbackAlert from './FeedbackAlert';
 
 interface FeedbackDialogProps {
   open: boolean;
@@ -20,6 +21,9 @@ interface FeedbackDialogProps {
 
 function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
   const [loading, setLoading] = useState(false);
+  const [emailFeedback, setEmailFeedback] = useState<
+    FeedbackEmailResponse | undefined
+  >(undefined);
 
   const { control, handleSubmit, reset } = useForm<FeedbackFormData>({
     mode: 'onBlur',
@@ -30,7 +34,7 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
   const onSubmit = handleSubmit(async (data) => {
     setLoading(true);
 
-    await sendFeedback(data);
+    setEmailFeedback(await sendFeedback(data));
 
     handleClose();
     setLoading(false);
@@ -38,28 +42,36 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
   });
 
   return (
-    <Dialog
-      open={open}
-      onClose={handleClose}
-      // Disable closing the window when sending a message
-      disableEscapeKeyDown={loading}
-      onBackdropClick={() => {
-        if (!loading) handleClose();
-      }}
-    >
-      <form onSubmit={onSubmit}>
-        <DialogTitle>Send feedback</DialogTitle>
-        <DialogContent>
-          <ObjectField control={control} />
-          <EmailField control={control} />
-          <MessageField control={control} />
-        </DialogContent>
-        <DialogActions>
-          <CancelButton handleClose={handleClose} />
-          <SubmitButton loading={loading} />
-        </DialogActions>
-      </form>
-    </Dialog>
+    <>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        // Disable closing the window when sending a message
+        disableEscapeKeyDown={loading}
+        onBackdropClick={() => {
+          if (!loading) handleClose();
+        }}
+      >
+        <form onSubmit={onSubmit}>
+          <DialogTitle>Send feedback</DialogTitle>
+          <DialogContent>
+            <ObjectField control={control} />
+            <EmailField control={control} />
+            <MessageField control={control} />
+          </DialogContent>
+          <DialogActions>
+            <CancelButton handleClose={handleClose} />
+            <SubmitButton loading={loading} />
+          </DialogActions>
+        </form>
+      </Dialog>
+      {emailFeedback && (
+        <FeedbackAlert
+          feedback={emailFeedback}
+          clearFeedback={() => setEmailFeedback(undefined)}
+        />
+      )}
+    </>
   );
 }
 

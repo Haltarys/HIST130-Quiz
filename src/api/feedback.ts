@@ -12,6 +12,16 @@ export type FeedbackFormData = {
   message: string;
 };
 
-export async function sendFeedback(data: FeedbackFormData) {
-  return emaijs.send(serviceID, templateID, data);
+export type FeedbackEmailResponse = {
+  success: boolean;
+  message: string;
+};
+
+export async function sendFeedback(
+  data: FeedbackFormData,
+): Promise<FeedbackEmailResponse> {
+  return emaijs
+    .send(serviceID, templateID, data)
+    .then(() => ({ success: true, message: 'Feedback sent.' }))
+    .catch((err) => ({ success: false, message: err.text }));
 }
