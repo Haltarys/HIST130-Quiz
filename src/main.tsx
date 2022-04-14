@@ -4,7 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import { QueryClientProvider } from 'react-query';
-import StoreProvider from './store';
+import { Provider } from 'react-redux';
+import store from './store/store';
 import theme from './theme';
 import { baseURL, queryClient } from './api';
 import App from './App';
@@ -16,9 +17,9 @@ ReactDOM.render(
       <CssBaseline>
         <ThemeProvider theme={theme}>
           <QueryClientProvider client={queryClient}>
-            <StoreProvider>
+            <Provider store={store}>
               <App />
-            </StoreProvider>
+            </Provider>
           </QueryClientProvider>
         </ThemeProvider>
       </CssBaseline>
