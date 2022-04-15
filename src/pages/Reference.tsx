@@ -1,4 +1,4 @@
-import { useChapters } from 'src/api';
+import { useChapters } from 'src/api/chapters';
 import Chapter from 'src/components/chapter';
 import ErrorMessage from 'src/components/error';
 import { LoadingChapters } from 'src/components/loading';

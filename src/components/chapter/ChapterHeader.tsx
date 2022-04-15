@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import type { Chapter as ChapterType } from 'src/api';
+import type { Chapter as ChapterType } from 'src/api/types';
 
 interface ChapterHeaderProps {
   chapter: ChapterType;

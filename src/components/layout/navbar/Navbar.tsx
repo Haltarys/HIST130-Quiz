@@ -1,12 +1,10 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import {
-  NavbarHeader,
-  NavbarTabs,
-  NavbarTitle,
-  SourceCodeButton,
-} from 'src/components/navbar';
 import Feedback from 'src/components/feedback';
+import NavbarHeader from './NavbarHeader';
+import NavbarTabs from './NavbarTabs';
+import NavbarTitle from './NavbarTitle';
+import SourceCodeButton from './SourceCodeButton';
 
 function Navbar() {
   return (

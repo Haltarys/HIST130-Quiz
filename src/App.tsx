@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { Body, Navbar } from './layout';
+import { Body, Navbar } from './components/layout';
 
 function App() {
   return (

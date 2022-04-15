@@ -1,7 +1,7 @@
 import Alert from '@mui/material/Alert';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import Snackbar from '@mui/material/Snackbar';
-import type { FeedbackEmailResponse } from 'src/api';
+import type { FeedbackEmailResponse } from 'src/api/feedback';
 
 function SlideTransition(props: SlideProps) {
   return <Slide {...props} direction="left" />;

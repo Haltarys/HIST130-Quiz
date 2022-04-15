@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-import type { Definition as DefinitionType, ID } from 'src/api';
+import type { Definition as DefinitionType, ID } from 'src/api/types';
 
 interface DefinitionCardProps {
   definition: DefinitionType;

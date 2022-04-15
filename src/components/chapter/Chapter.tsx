@@ -1,6 +1,9 @@
-import type { Chapter as ChapterType } from 'src/api';
-import { useDefinitions } from 'src/api';
-import { useStore } from 'src/store';
+import type { Chapter as ChapterType } from 'src/api/types';
+import { useDefinitions } from 'src/api/definitions';
+import {
+  useFavouriteIDs,
+  useToggleFavourite,
+} from 'src/features/favouritesSlice';
 import DefinitionCard, { Collection } from 'src/components/card';
 import Error from 'src/components/error';
 import ChapterHeader from './ChapterHeader';
@@ -12,7 +15,8 @@ interface ChapterProps {
 
 function Chapter({ chapter }: ChapterProps) {
   const { isLoading, error, data: definitions } = useDefinitions(chapter.id);
-  const { favouriteIDs, onBookmark } = useStore();
+  const favouriteIDs = useFavouriteIDs();
+  const toggleFavourite = useToggleFavourite();
 
   if (error) return <Error>{error.message}</Error>;
 
@@ -27,7 +31,7 @@ function Chapter({ chapter }: ChapterProps) {
             definition={definition}
             subheader={`${chapter.title} (page ${definition.pageNumber})`}
             isFavourite={favouriteIDs.includes(definition.id)}
-            onBookmark={onBookmark}
+            onBookmark={toggleFavourite}
           />
         ))
       )}

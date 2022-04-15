@@ -1,5 +1,9 @@
-import { useChapters, useDefinitions } from 'src/api';
-import { useStore } from 'src/store';
+import { useDefinitions } from 'src/api/definitions';
+import { useChapters } from 'src/api/chapters';
+import {
+  useFavouriteIDs,
+  useToggleFavourite,
+} from 'src/features/favouritesSlice';
 import Error from 'src/components/error';
 import DefinitionCard, { Collection } from 'src/components/card';
 import { LoadingCardList } from 'src/components/loading';
@@ -12,7 +16,8 @@ function Favourites() {
     error: chapterError,
     data: chapters,
   } = useChapters();
-  const { favouriteIDs, onBookmark } = useStore();
+  const favouriteIDs = useFavouriteIDs();
+  const toggleFavourite = useToggleFavourite();
 
   const favourites = definitions?.filter((definition) =>
     favouriteIDs.includes(definition.id),
@@ -36,12 +41,9 @@ function Favourites() {
             <DefinitionCard
               key={definition.id}
               definition={definition}
-              subheader={`${
-                // TODO: get chapter title somehow
-                chapterTitle
-              } (page ${definition.pageNumber})`}
+              subheader={`${chapterTitle} (page ${definition.pageNumber})`}
               isFavourite={favouriteIDs.includes(definition.id)}
-              onBookmark={onBookmark}
+              onBookmark={toggleFavourite}
             />
           );
         })
