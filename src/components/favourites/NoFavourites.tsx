@@ -32,9 +32,9 @@ function NoFavourites() {
           component={RouterLink}
           sx={{ fontWeight: 'bold' }}
         >
-          homepage
+          Reference
         </Link>{' '}
-        and click the{' '}
+        page and click the{' '}
         <BookmarkAddOutlinedIcon
           color="action"
           fontSize="small"

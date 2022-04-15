@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Container from '@mui/material/Container';
 // import Routes from 'src/components/routes';
-import { Favourites, NotFound, Quiz, Reference } from 'src/pages';
+import { About, Favourites, NotFound, Quiz, Reference } from 'src/pages';
 
 function Body() {
   return (
@@ -25,6 +25,7 @@ function Body() {
           element={<Navigate to="/favourites" replace />}
         />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Container>
   );
