@@ -1,6 +1,7 @@
 import Box from '@mui/system/Box';
 import { useDefinitions } from 'src/api/definitions';
 import SelectedChaptersMenu from 'src/components/quiz/menu/SelectedChaptersMenu';
+import RandomDefinition from 'src/components/quiz/RandomDefinition';
 
 function Quiz() {
   const { isLoading, error, data: definitions } = useDefinitions();
@@ -17,6 +18,9 @@ function Quiz() {
         placeItems: 'center',
       }}
     >
+      {definitions !== undefined && (
+        <RandomDefinition definitions={definitions} />
+      )}
       <SelectedChaptersMenu />
     </Box>
   );
