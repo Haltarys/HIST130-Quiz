@@ -1,7 +1,14 @@
 import Box from '@mui/system/Box';
-import SelectedChaptersMenu from 'src/components/quiz/SelectedChaptersMenu';
+import { useDefinitions } from 'src/api/definitions';
+import SelectedChaptersMenu from 'src/components/quiz/menu/SelectedChaptersMenu';
 
 function Quiz() {
+  const { isLoading, error, data: definitions } = useDefinitions();
+
+  if (isLoading) return <div>loading...</div>;
+
+  if (error) return <div>Error:{error.message}...</div>;
+
   return (
     <Box
       height="100%"

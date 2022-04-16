@@ -1,16 +1,17 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState, useAppDispatch, useAppSelector } from 'src/store';
 import type { ID } from 'src/api/types';
-interface SelectedChaptersState {
+
+interface QuizState {
   selectedChapters: { [id: ID]: boolean };
 }
 
-const initialState: SelectedChaptersState = {
-  selectedChapters: {}, // TODO: retrieve from localStorage,
+const initialState: QuizState = {
+  selectedChapters: {},
 };
 
-export const selectedChaptersSlice = createSlice({
-  name: 'favourites',
+export const quizSlice = createSlice({
+  name: 'quiz',
   initialState,
   reducers: {
     selectChapter: (state, action: PayloadAction<ID>) => {
@@ -26,12 +27,10 @@ export const selectedChaptersSlice = createSlice({
 });
 
 export const { selectChapter, deselectChapter, clearSelectedChapters } =
-  selectedChaptersSlice.actions;
+  quizSlice.actions;
 
-export function useSelectedChapters() {
-  return useAppSelector(
-    (state: RootState) => state.selectedChapters.selectedChapters,
-  );
+export function useQuiz() {
+  return useAppSelector((state: RootState) => state.quiz);
 }
 
 export function useToggleChapter() {
@@ -41,4 +40,4 @@ export function useToggleChapter() {
     dispatch(isSelected ? deselectChapter(id) : selectChapter(id));
 }
 
-export default selectedChaptersSlice.reducer;
+export default quizSlice.reducer;

@@ -4,19 +4,18 @@ import MenuItem from '@mui/material/MenuItem';
 import ListItemText from '@mui/material/ListItemText';
 import Switch from '@mui/material/Switch';
 import { useChapters } from 'src/api/chapters';
-import {
-  useSelectedChapters,
-  useToggleChapter,
-} from 'src/features/selectedChaptersSlice';
+import { useQuiz, useToggleChapter } from 'src/features/quizSlice';
+import LoadingSelectedChaptersMenu from './LoadingSelectedChaptersMenu';
+import Error from 'src/components/error';
 
 function SelectedChaptersMenu() {
   const { isLoading, error, data: chapters } = useChapters();
-  const selectedChapters = useSelectedChapters();
+  const { selectedChapters } = useQuiz();
   const toggleChapter = useToggleChapter();
 
-  if (isLoading) return <div>loading...</div>;
+  if (isLoading) return <LoadingSelectedChaptersMenu />;
 
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <Error>{error.message}</Error>;
 
   return (
     <MenuList>
