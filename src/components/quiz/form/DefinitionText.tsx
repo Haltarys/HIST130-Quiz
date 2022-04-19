@@ -1,11 +1,13 @@
+import { Link } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import type { Definition } from 'src/api/types';
 
 interface DefinitionTextProps {
   definition: Definition | undefined;
+  handleClick: () => void;
 }
 
-function DefinitionText({ definition }: DefinitionTextProps) {
+function DefinitionText({ definition, handleClick }: DefinitionTextProps) {
   return (
     <>
       <Typography variant="h6" gutterBottom>
@@ -27,8 +29,16 @@ function DefinitionText({ definition }: DefinitionTextProps) {
           <div>
             <Typography fontWeight="bold">Nothing to show here!</Typography>
             <Typography>
-              Select some sources from above and click the "New random
-              definition" button below.
+              Select some sources from above and click the{' '}
+              <Link
+                variant="body1"
+                component="button"
+                color="primary"
+                onClick={handleClick}
+              >
+                New random definition
+              </Link>{' '}
+              button below.
             </Typography>
           </div>
         </Typography>

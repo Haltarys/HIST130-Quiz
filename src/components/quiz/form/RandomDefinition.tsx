@@ -29,7 +29,10 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
         reset();
       })}
     >
-      <DefinitionText definition={definition} />
+      <DefinitionText
+        definition={definition}
+        handleClick={setNextRandomDefinition}
+      />
       <QuizTextField control={control} />
       <QuizActions handleClick={setNextRandomDefinition} />
     </form>
