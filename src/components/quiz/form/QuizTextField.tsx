@@ -8,11 +8,15 @@ import { QuizFormData } from './quizFormData';
 
 interface QuizTextFieldProps {
   control: Control<QuizFormData>;
+  definitionRegex: RegExp;
+  handleRevealSolution: () => void;
 }
 
-function QuizTextField({ control }: QuizTextFieldProps) {
-  const definitionRegex = /batman/;
-
+function QuizTextField({
+  control,
+  handleRevealSolution,
+  definitionRegex,
+}: QuizTextFieldProps) {
   return (
     <Controller
       control={control}
@@ -20,23 +24,24 @@ function QuizTextField({ control }: QuizTextFieldProps) {
       defaultValue=""
       rules={{
         required: true,
-        // TODO: add regex for every definition
         pattern: definitionRegex,
       }}
-      render={({ field, fieldState: { invalid } }) => (
+      render={({ field: { ref, ...rest }, fieldState: { invalid } }) => (
         <TextField
-          {...field}
+          {...rest}
+          inputRef={ref} // otherwise, the focus on solution reveal, doesen't work
           variant="outlined"
           fullWidth
+          autoFocus
           sx={{ marginBottom: 4 }}
-          placeholder="Try to guess the definition's keyword here."
+          placeholder="Type in the term that you think matches the above definition."
           error={invalid}
           helperText={invalid && 'Incorrect keyword'}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
                 <Tooltip title="Click to reveal the solution">
-                  <IconButton>
+                  <IconButton onClick={handleRevealSolution}>
                     <VisibilityIcon color="primary" />
                   </IconButton>
                 </Tooltip>
