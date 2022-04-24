@@ -1,6 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Feedback from 'src/components/feedback/Feedback';
+import FeedbackButton from 'src/components/feedback/FeedbackButton';
 import AboutLink from './AboutLink';
 import NavbarHeader from './NavbarHeader';
 import NavbarTabs from './NavbarTabs';
@@ -13,7 +13,7 @@ function Navbar() {
       <Toolbar>
         <NavbarTitle />
         <NavbarHeader />
-        <Feedback />
+        <FeedbackButton />
         <AboutLink />
         <SourceCodeButton />
       </Toolbar>

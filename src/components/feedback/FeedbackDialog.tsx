@@ -5,6 +5,10 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import {
+  useCloseFeedbackDialog,
+  useFeedbackDialogOpen,
+} from 'src/features/feedbackSlice';
+import {
   FeedbackFormData,
   FeedbackEmailResponse,
   sendFeedback,
@@ -18,12 +22,9 @@ import {
 } from './atoms';
 import FeedbackAlert from './FeedbackAlert';
 
-interface FeedbackDialogProps {
-  open: boolean;
-  handleClose: () => void;
-}
-
-function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
+function FeedbackDialog() {
+  const dialogOpen = useFeedbackDialogOpen();
+  const closeFeedbackDialog = useCloseFeedbackDialog();
   const [loading, setLoading] = useState(false);
   const [emailFeedback, setEmailFeedback] = useState<
     FeedbackEmailResponse | undefined
@@ -38,12 +39,12 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
   return (
     <>
       <Dialog
-        open={open}
-        onClose={handleClose}
+        open={dialogOpen}
+        onClose={closeFeedbackDialog}
         // Disable closing the window when sending a message
         disableEscapeKeyDown={loading}
         onBackdropClick={() => {
-          if (!loading) handleClose();
+          if (!loading) closeFeedbackDialog();
         }}
       >
         <form
@@ -52,7 +53,7 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
 
             setEmailFeedback(await sendFeedback(data));
 
-            handleClose();
+            closeFeedbackDialog();
             setLoading(false);
             reset();
           })}
@@ -64,7 +65,7 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
             <MessageField control={control} />
           </DialogContent>
           <DialogActions>
-            <CancelButton handleClose={handleClose} />
+            <CancelButton handleClose={closeFeedbackDialog} />
             <SubmitButton loading={loading} />
           </DialogActions>
         </form>
