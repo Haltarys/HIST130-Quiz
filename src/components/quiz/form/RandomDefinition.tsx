@@ -37,18 +37,18 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
         definition={definition}
         handleClick={setNextRandomDefinition}
       />
-      {definition && (
-        <QuizTextField
-          control={control}
-          // TODO: check orthograph for 'stono rebellion' in book
-          // TODO: check orthograph for 'seven year's war' in book
-          definitionRegex={new RegExp(definition.regex, 'gmi')}
-          handleRevealSolution={() => {
-            setValue('keywordAttempt', definition.term);
-            setFocus('keywordAttempt');
-          }}
-        />
-      )}
+      <QuizTextField
+        control={control}
+        // TODO: check orthograph for 'stono rebellion' in book
+        // TODO: check orthograph for 'seven year's war' in book
+        definitionRegex={
+          definition ? new RegExp(definition.regex, 'gmi') : /.*/
+        }
+        handleRevealSolution={() => {
+          if (definition) setValue('keywordAttempt', definition.term);
+          setFocus('keywordAttempt');
+        }}
+      />
       <QuizActions handleClick={setNextRandomDefinition} />
     </form>
   );
