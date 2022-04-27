@@ -40,6 +40,8 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
       <QuizTextField
         control={control}
         // TODO: get regex from definition
+        // TODO: check orthograph for 'stono rebellion' in book
+        // TODO: check orthograph for 'seven year's war' in book
         definitionRegex={/batman/}
         handleRevealSolution={() => {
           if (definition) setValue('keywordAttempt', definition.term);
