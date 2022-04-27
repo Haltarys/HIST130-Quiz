@@ -13,5 +13,6 @@ export class Definition {
   term: string;
   pageNumber: number;
   text: string;
+  regex: string;
   chapterId: ID;
 }
