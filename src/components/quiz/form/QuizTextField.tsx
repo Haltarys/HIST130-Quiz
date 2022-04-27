@@ -20,7 +20,7 @@ function QuizTextField({
   return (
     <Controller
       control={control}
-      name="keywordAttempt"
+      name="definitionTermAttempt"
       defaultValue=""
       rules={{
         required: true,
@@ -36,7 +36,7 @@ function QuizTextField({
           sx={{ marginBottom: 4 }}
           placeholder="Type in the term that you think matches the above definition."
           error={invalid}
-          helperText={invalid && 'Incorrect keyword'}
+          helperText={invalid && 'Your answer is incorrect'}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
