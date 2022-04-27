@@ -54,5 +54,61 @@
     "subtitle": "Building a Republic",
     "period": "1775-1789",
     "pageNumber": 181
+  },
+  {
+    "id": 8,
+    "title": "Chapter 9",
+    "subtitle": "The New Nation Takes Form",
+    "period": "1789-1800",
+    "pageNumber": 208
+  },
+  {
+    "id": 9,
+    "title": "Chapter 10",
+    "subtitle": "Republicans in Power",
+    "period": "1800-1824",
+    "pageNumber": 233
+  },
+  {
+    "id": 10,
+    "title": "Chapter 11",
+    "subtitle": "The Expanding Republic",
+    "period": "1815-1840",
+    "pageNumber": 262
+  },
+  {
+    "id": 11,
+    "title": "Chapter 12",
+    "subtitle": "The New West and the Free North",
+    "period": "1840-1860",
+    "pageNumber": 289
+  },
+  {
+    "id": 12,
+    "title": "Chapter 13",
+    "subtitle": "The Slave South",
+    "period": "1820-1860",
+    "pageNumber": 318
+  },
+  {
+    "id": 13,
+    "title": "Chapter 14",
+    "subtitle": "The House Divided",
+    "period": "1846-1861",
+    "pageNumber": 344
+  },
+  {
+    "id": 14,
+    "title": "Chapter 15",
+    "subtitle": "The Crucible of War",
+    "period": "1861-1865",
+    "pageNumber": 370
+  },
+  {
+    "id": 15,
+    "title": "Chapter 16",
+    "subtitle": "Reconstruction",
+    "period": "1863-1877",
+    "pageNumber": 401
   }
 ]
