@@ -481,10 +481,10 @@
   },
   {
     "id": 60,
-    "term": "Seven Year's War",
+    "term": "Seven Years' War",
     "pageNumber": 127,
     "text": "War (1754-1763) between Britain and France that ended with British domination of North America; known in America as the French and Indian War. Its high expense laid the foundation for conflict that would lead to the American Revolution.",
-    "regex": "seven year'?s? war",
+    "regex": "seven years'? war",
     "chapterId": 5
   },
   {
