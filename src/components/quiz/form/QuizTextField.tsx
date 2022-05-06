@@ -8,12 +8,14 @@ import { QuizFormData } from './quizFormData';
 
 interface QuizTextFieldProps {
   control: Control<QuizFormData>;
+  clearError: () => void;
   definitionRegex: RegExp;
   handleRevealSolution: () => void;
 }
 
 function QuizTextField({
   control,
+  clearError,
   handleRevealSolution,
   definitionRegex,
 }: QuizTextFieldProps) {
@@ -26,13 +28,20 @@ function QuizTextField({
         required: true,
         pattern: definitionRegex,
       }}
-      render={({ field: { ref, ...rest }, fieldState: { invalid } }) => (
+      render={({
+        field: { ref, onChange, ...rest },
+        fieldState: { invalid },
+      }) => (
         <TextField
           {...rest}
           inputRef={ref} // otherwise, the focus on solution reveal, doesen't work
           variant="outlined"
           fullWidth
           autoFocus
+          onChange={(e) => {
+            clearError();
+            onChange(e);
+          }}
           sx={{ marginBottom: 4 }}
           placeholder="Type in the term that you think matches the above definition."
           error={invalid}

@@ -15,7 +15,7 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
   const nextRandomDefinition = useNextRandomDefinition(definitions);
   const [definition, setDefinition] = useState<Definition | undefined>();
   const setNextRandomDefinition = () => setDefinition(nextRandomDefinition());
-  const { control, handleSubmit, reset, setFocus, setValue } =
+  const { control, handleSubmit, reset, setFocus, setValue, clearErrors } =
     useForm<QuizFormData>({
       reValidateMode: 'onSubmit',
       shouldUnregister: true,
@@ -42,6 +42,7 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
         definitionRegex={
           definition ? new RegExp(definition.regex, 'gmi') : /.*/
         }
+        clearError={() => clearErrors()}
         handleRevealSolution={() => {
           if (definition) setValue('definitionTermAttempt', definition.term);
           setFocus('definitionTermAttempt');
