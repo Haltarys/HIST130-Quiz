@@ -16,7 +16,7 @@ function checkDone() {
   );
 }
 
-// checkDone();
+checkDone();
 
 function countDefinitions() {
   const counts = {};
@@ -46,4 +46,4 @@ function lowerCasifyRegex() {
   console.log(JSON.stringify(lowerCasedDefinitions, undefined, 2));
 }
 
-lowerCasifyRegex();
+// lowerCasifyRegex();
