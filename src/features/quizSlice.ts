@@ -55,9 +55,7 @@ export function useQuiz() {
       // Proxy used to make `true` the default value if the key is not present
       new Proxy(state.quiz.selectedSources, {
         get(selectedSources, key) {
-          return selectedSources[key as QuizSourceKey] !== undefined
-            ? selectedSources[key as QuizSourceKey]
-            : true;
+          return selectedSources[key as QuizSourceKey] ?? true;
         },
       }),
   }));
