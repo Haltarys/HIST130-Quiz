@@ -5,7 +5,9 @@ import Tabs from '@mui/material/Tabs';
 function NavbarTabs() {
   const location = useLocation();
 
-  const value = ['/', '/favourites', '/quiz'].includes(location.pathname)
+  const value = ['/', '/favourites', '/quiz', '/about'].includes(
+    location.pathname,
+  )
     ? location.pathname
     : false;
 
@@ -25,6 +27,7 @@ function NavbarTabs() {
         to="/favourites"
       />
       <Tab value="/quiz" label="Quiz" component={RouterLink} to="/quiz" />
+      <Tab value="/about" label="About" component={RouterLink} to="/about" />
     </Tabs>
   );
 }
