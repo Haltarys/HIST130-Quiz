@@ -11,6 +11,7 @@ export class Chapter {
 export class Definition {
   id: ID;
   term: string;
+  htmlTerm?: string;
   pageNumber: number;
   text: string;
   regex: string;

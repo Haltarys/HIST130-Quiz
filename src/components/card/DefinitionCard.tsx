@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import type { Definition as DefinitionType, ID } from 'src/api/types';
+import SanitiseHTML from 'src/components/utils/SanitiseHTML';
 
 interface DefinitionCardProps {
   definition: DefinitionType;
@@ -35,7 +36,10 @@ function DefinitionCard({
           },
         }}
       >
-        <CardHeader title={definition.term} subheader={subheader} />
+        <CardHeader
+          title={<SanitiseHTML html={definition.htmlTerm || definition.term} />}
+          subheader={subheader}
+        />
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography variant="body2" color="text.secondary">
             {definition.text}
