@@ -7,8 +7,7 @@
     "dev": "vite --port 3130",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "yarn run build --base='/HIST130-Quiz/'",
-    "deploy": "yarn run gh-pages --dist dist --branch public"
+    "deploy": "./github-pages.sh"
   },
   "dependencies": {
     "@emailjs/browser": "^3.5.0",
