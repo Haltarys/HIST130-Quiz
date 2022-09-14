@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Container from '@mui/material/Container';
-// import Routes from 'src/components/routes';
 import { About, Favourites, NotFound, Quiz, Reference } from 'src/pages';
 
 function Body() {
