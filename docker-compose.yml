@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  hist130-quiz:
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - 3130:3130
+    volumes:
+      - ./:/app
