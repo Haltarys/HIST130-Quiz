@@ -9,31 +9,32 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import grey from '@mui/material/colors/grey';
+import { Definition as DefinitionType, ID } from 'src/api';
 
 interface DefinitionCardProps {
-  id: string | number;
-  title: string;
-  subheader: string;
-  text: string;
+  definition: DefinitionType;
+  subheader?: string | undefined;
   isFavourite: boolean;
-  onBookmark: (id: string | number, isFavourite: boolean) => unknown;
+  onBookmark: (id: ID, isFavourite: boolean) => unknown;
 }
 
 function DefinitionCard({
-  id,
-  title,
+  definition,
   subheader,
-  text,
   isFavourite,
   onBookmark,
 }: DefinitionCardProps) {
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card sx={{ backgroundColor: grey['100'] }}>
-        <CardHeader title={title} subheader={subheader} />
+        <CardHeader title={definition.term} subheader={subheader} />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            {text}
+            {
+              // TODO: remove lorem ipsum
+              definition.text ||
+                'lorem ipsum dolor sit amet conspicing delectetur.'
+            }
           </Typography>
         </CardContent>
         <CardActions>
@@ -41,10 +42,15 @@ function DefinitionCard({
             title={isFavourite ? 'Remove from Favourites' : 'Add to Favourites'}
           >
             <IconButton
-              onClick={() => onBookmark(id, isFavourite)}
+              size="large"
+              onClick={() => onBookmark(definition.id, isFavourite)}
               color={isFavourite ? 'secondary' : 'default'}
             >
-              {isFavourite ? <BookmarkIcon /> : <BookmarkAddOutlinedIcon />}
+              {isFavourite ? (
+                <BookmarkIcon fontSize="large" />
+              ) : (
+                <BookmarkAddOutlinedIcon fontSize="large" />
+              )}
             </IconButton>
           </Tooltip>
         </CardActions>

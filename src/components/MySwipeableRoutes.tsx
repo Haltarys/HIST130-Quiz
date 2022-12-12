@@ -7,8 +7,19 @@ import {
 } from 'react-router-dom';
 import SwipeableViews from 'react-swipeable-views';
 
+// springConfig: {
+//   duration: '0.35s',
+//   easeFunction: 'cubic-bezier(0.15, 0.3, 0.25, 1)',
+//   delay: '0s',
+// },
+
+// TODO: extend props
+interface MySwipeableRoutesProps extends RoutesProps {
+  default?: React.ReactNode;
+}
+
 // Ugly re-implementation of react-swipeable-routes since it doesn't support React Router v6 (yet, at least)
-function SwipeableRoutes({ children, location }: RoutesProps) {
+function MySwipeableRoutes({ children, location }: RoutesProps) {
   location = location || useLocation();
   const routes = createRoutesFromChildren(children);
   const matches = matchRoutes(routes, location);
@@ -25,4 +36,4 @@ function SwipeableRoutes({ children, location }: RoutesProps) {
   );
 }
 
-export default SwipeableRoutes;
+export default MySwipeableRoutes;

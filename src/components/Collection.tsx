@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 interface CollectionProps {
-  header: string;
+  header: React.ReactNode;
   children: React.ReactNode;
 }
 
@@ -14,10 +14,13 @@ function Collection({ header, children }: CollectionProps) {
       padding={2}
       // must be twice as much at the bottom for some reason
       paddingBottom={4}
-      sx={{ overflowY: 'clip' }}
     >
       <Grid item xs={12}>
-        <Typography variant="h4">{header}</Typography>
+        {typeof header === 'string' ? (
+          <Typography variant="h4">{header}</Typography>
+        ) : (
+          header
+        )}
       </Grid>
       {children}
     </Grid>
