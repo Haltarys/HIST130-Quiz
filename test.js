@@ -1,7 +1,7 @@
 'use strict';
 
-const chapters = require('./data/chapters.json');
-const definitions = require('./data/definitions.json');
+const chapters = require('./public/chapters.json');
+const definitions = require('./public/definitions.json');
 
 function testData() {
   const assert = require('assert');
@@ -34,14 +34,29 @@ function testData() {
 // const array = Array.from(range(84, 96));
 // console.log(JSON.stringify(array));
 
-chapters.forEach((chapter) => {
-  chapter.definitions.forEach((definition_id) => {
-    const definition = definitions.find(
-      (definition) => definition.id === definition_id,
-    );
-    definition.chapterId = chapter.id;
-  });
-  delete chapter.definitions;
-});
+// chapters.forEach((chapter) => {
+//   chapter.definitions.forEach((definition_id) => {
+//     const definition = definitions.find(
+//       (definition) => definition.id === definition_id,
+//     );
+//     definition.chapterId = chapter.id;
+//   });
+//   delete chapter.definitions;
+// });
 
-console.log(JSON.stringify(definitions, null, 2));
+// console.log(JSON.stringify(definitions, null, 2));
+
+function checkDone() {
+  const done = definitions.filter((def) => def.text !== '').length;
+  const total = definitions.length;
+
+  definitions.forEach((definition) => {
+    if (definition.text === '') console.log(definition);
+  });
+
+  console.log(
+    `${done}/${total} (${Math.round((done / total) * 10000) / 100}%) done.`,
+  );
+}
+
+checkDone();
