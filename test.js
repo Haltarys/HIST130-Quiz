@@ -59,4 +59,17 @@ function checkDone() {
   );
 }
 
-checkDone();
+// checkDone();
+
+function countDefinitions() {
+  const counts = {};
+
+  definitions.forEach(
+    (definition) =>
+      (counts[definition.chapterId] = (counts[definition.chapterId] || 0) + 1),
+  );
+
+  console.log(counts);
+}
+
+countDefinitions();
