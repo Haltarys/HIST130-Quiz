@@ -3,26 +3,21 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import App from './App';
+import { QueryClientProvider } from 'react-query';
+import StoreProvider from './store';
 import theme from './theme';
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-      refetchOnMount: false,
-    },
-  },
-});
+import { baseURL, queryClient } from './api';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={import.meta.env.BASE_URL || '/'}>
+    <Router basename={baseURL}>
       <CssBaseline>
         <ThemeProvider theme={theme}>
           <QueryClientProvider client={queryClient}>
-            <App />
+            <StoreProvider>
+              <App />
+            </StoreProvider>
           </QueryClientProvider>
         </ThemeProvider>
       </CssBaseline>

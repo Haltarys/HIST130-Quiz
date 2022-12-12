@@ -1,4 +1,5 @@
 import { Chapter as ChapterType, useDefinitions } from 'src/api';
+import { useStore } from 'src/store';
 import ChapterHeader from './ChapterHeader';
 import Collection from './Collection';
 import DefinitionCard from './DefinitionCard';
@@ -9,6 +10,7 @@ interface ChapterProps {
 
 function Chapter({ chapter }: ChapterProps) {
   const { isLoading, error, data: definitions } = useDefinitions(chapter.id);
+  const { favouriteIDs, onBookmark } = useStore();
 
   if (isLoading) return <div>loading definitions for {chapter.title}...</div>;
 
@@ -21,8 +23,8 @@ function Chapter({ chapter }: ChapterProps) {
           key={definition.id}
           definition={definition}
           subheader={`${chapter.title} (page ${definition.pageNumber})`}
-          isFavourite={Math.random() < 0.5}
-          onBookmark={() => {}}
+          isFavourite={favouriteIDs.includes(definition.id)}
+          onBookmark={onBookmark}
         />
       ))}
     </Collection>

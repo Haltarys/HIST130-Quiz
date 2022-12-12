@@ -9,7 +9,7 @@ function Reference() {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    // wrapped in a fragment, otherwise Typescript whines
+    // wrapped in a fragment, otherwise Typescript whines that the value may be undefined
     <>
       {chapters?.map((chapter) => (
         <Chapter key={chapter.id} chapter={chapter} />
