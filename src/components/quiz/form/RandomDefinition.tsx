@@ -45,8 +45,8 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
           definition ? new RegExp(definition.regex, 'gmi') : /.*/
         }
         handleRevealSolution={() => {
-          if (definition) setValue('keywordAttempt', definition.term);
-          setFocus('keywordAttempt');
+          if (definition) setValue('definitionTermAttempt', definition.term);
+          setFocus('definitionTermAttempt');
         }}
       />
       <QuizActions handleClick={setNextRandomDefinition} />

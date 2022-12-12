@@ -1,3 +1,3 @@
 export type QuizFormData = {
-  keywordAttempt: string;
+  definitionTermAttempt: string;
 };
