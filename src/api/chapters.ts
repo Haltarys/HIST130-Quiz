@@ -1,5 +1,5 @@
 import { useQuery } from 'react-query';
-import { fetchData } from './api';
+import { fetchData } from './axios';
 import type { Chapter } from './types';
 
 export function useChapters() {

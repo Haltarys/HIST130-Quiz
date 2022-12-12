@@ -7,7 +7,8 @@ import { QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import theme from './theme';
-import { baseURL, queryClient } from './api';
+import { baseURL } from './api/axios';
+import { queryClient } from './api/client';
 import App from './App';
 import './styles/globals.css';
 

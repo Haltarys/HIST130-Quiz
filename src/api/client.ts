@@ -1,6 +1,7 @@
 import { QueryClient } from 'react-query';
+import { fetchData } from './axios';
 
-const queryClient = new QueryClient({
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false,
@@ -9,4 +10,4 @@ const queryClient = new QueryClient({
   },
 });
 
-export default queryClient;
+queryClient.prefetchQuery('chapters', () => fetchData('/chapters.json'));
