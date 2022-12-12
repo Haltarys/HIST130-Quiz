@@ -12,14 +12,7 @@ function Error({ children }: ErrorProps) {
       color="error"
       // Rendered as a div because React complains that headers (<h6>) must not be rendered inside a <p> tag (default value.)
       component="div"
-      sx={{
-        position: 'absolute',
-        left: '50%',
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
-        padding: 2,
-      }}
+      textAlign="center"
     >
       <SentimentVeryDissatisfiedIcon color="error" sx={{ fontSize: 96 }} />
       <Typography variant="h4" color="error">
