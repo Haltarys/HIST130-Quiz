@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "yarn run build --base='/HIST130-Quiz/'",
-    "deploy": "yarn run gh-pages --dist dist --branch public"
+    "deploy": "yarn run gh-pages --dist dist --branch public",
+    "publish": "yarn run deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
