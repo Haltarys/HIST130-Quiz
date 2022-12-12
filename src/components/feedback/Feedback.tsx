@@ -3,7 +3,7 @@ import FeedbackButton from './FeedbackButton';
 import FeedbackDialog from './FeedbackDialog';
 
 function Feedback() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <>

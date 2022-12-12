@@ -21,14 +21,21 @@ interface FeedbackDialogProps {
 function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
   const [loading, setLoading] = useState(false);
 
-  const { control, handleSubmit, reset } = useForm<FeedbackFormData>();
+  const { control, handleSubmit, reset, formState } = useForm<FeedbackFormData>(
+    {
+      mode: 'onBlur',
+      reValidateMode: 'onBlur',
+    },
+  );
 
   const onSubmit = handleSubmit(async (data) => {
     setLoading(true);
 
+    console.log(formState);
+
     await sendFeedback(data);
 
-    handleClose();
+    // handleClose();
     setLoading(false);
     reset();
   });

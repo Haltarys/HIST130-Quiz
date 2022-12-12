@@ -10,15 +10,16 @@ function ObjectField({ control }: FieldProps) {
       control={control}
       name="object"
       defaultValue=""
-      render={({ field }) => (
+      render={({ field, fieldState: { invalid, error } }) => (
         <TextField
           {...field}
           variant="outlined"
-          id="object"
           label="Object"
           type="text"
           required
           placeholder="Bug report, feature request, just saying hi..."
+          error={invalid}
+          helperText={invalid && error}
           autoFocus
           fullWidth
           margin="normal"
