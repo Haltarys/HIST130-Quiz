@@ -1,6 +1,6 @@
 {
   "name": "hist130-quiz",
-  "homepage": "https://haltarys.github.io/HIST130-Quiz/",
+  "homepage": "https://hist130-quiz.netlify.app",
   "private": true,
   "version": "0.0.0",
   "scripts": {
