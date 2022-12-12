@@ -39,8 +39,6 @@ function RandomDefinition({ definitions }: RandomDefinitionProps) {
       />
       <QuizTextField
         control={control}
-        // TODO: check orthograph for 'stono rebellion' in book
-        // TODO: check orthograph for 'seven year's war' in book
         definitionRegex={
           definition ? new RegExp(definition.regex, 'gmi') : /.*/
         }
