@@ -8,7 +8,7 @@ import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={import.meta.env.BASE_URL || '/'}>
       <CssBaseline>
         <ThemeProvider theme={theme}>
           <App />
