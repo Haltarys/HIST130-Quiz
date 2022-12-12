@@ -8,7 +8,8 @@ function MessageField({ control }: FieldProps) {
       control={control}
       name="message"
       defaultValue=""
-      render={({ field, fieldState: { invalid, error } }) => (
+      rules={{ required: true }}
+      render={({ field, fieldState: { invalid } }) => (
         <TextField
           {...field}
           variant="outlined"
@@ -16,7 +17,7 @@ function MessageField({ control }: FieldProps) {
           type="text"
           required
           error={invalid}
-          helperText={invalid && error}
+          helperText={invalid && 'Let me know your thoughts.'}
           multiline
           rows={8}
           fullWidth

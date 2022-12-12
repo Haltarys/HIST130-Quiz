@@ -1,7 +1,6 @@
 import { Controller } from 'react-hook-form';
 import TextField from '@mui/material/TextField';
-import InputAdornment from '@mui/material/InputAdornment';
-import TitleIcon from '@mui/icons-material/Title';
+import MenuItem from '@mui/material/MenuItem';
 import { FieldProps } from './fieldProps';
 
 function ObjectField({ control }: FieldProps) {
@@ -9,28 +8,27 @@ function ObjectField({ control }: FieldProps) {
     <Controller
       control={control}
       name="object"
+      // Typescript complains that it's not one of the expected types but it's fine
+      // @ts-ignore
       defaultValue=""
-      render={({ field, fieldState: { invalid, error } }) => (
+      rules={{ required: true }}
+      render={({ field, fieldState: { invalid } }) => (
         <TextField
           {...field}
           variant="outlined"
           label="Object"
-          type="text"
+          select
           required
-          placeholder="Bug report, feature request, just saying hi..."
+          placeholder="Select a type of feedback"
           error={invalid}
-          helperText={invalid && error}
-          autoFocus
+          helperText={invalid && 'Please select a type of feedback'}
           fullWidth
           margin="normal"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <TitleIcon />
-              </InputAdornment>
-            ),
-          }}
-        />
+        >
+          <MenuItem value="feature">Feature request</MenuItem>
+          <MenuItem value="bug">Bug report</MenuItem>
+          <MenuItem value="other">Other</MenuItem>
+        </TextField>
       )}
     />
   );

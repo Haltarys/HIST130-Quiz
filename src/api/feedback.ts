@@ -1,5 +1,5 @@
 export type FeedbackFormData = {
-  object: string;
+  object: 'feature' | 'bug' | 'other';
   email?: string;
   message: string;
 };
