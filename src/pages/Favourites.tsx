@@ -3,7 +3,7 @@ import { useStore } from 'src/store';
 import Error from 'src/components/error';
 import DefinitionCard, { Collection } from 'src/components/card';
 import { LoadingCardList } from 'src/components/loading';
-import { NoCards } from 'src/components/card';
+import { NoFavourites } from 'src/components/card';
 
 function Favourites() {
   const { isLoading, error, data: definitions } = useDefinitions();
@@ -33,7 +33,7 @@ function Favourites() {
           />
         ))
       ) : (
-        <NoCards />
+        <NoFavourites />
       )}
     </Collection>
   );
