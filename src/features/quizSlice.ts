@@ -2,14 +2,17 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState, useAppDispatch, useAppSelector } from 'src/store';
 import type { Definition, ID } from 'src/api/types';
 import { useEffect } from 'react';
+import { useFavouriteIDs } from './favouritesSlice';
 
 interface QuizState {
-  selectedChapters: { [id: ID]: boolean };
+  selectedSources: { [chapterId: ID]: boolean; favourites: boolean };
   definitionsAlreadyEncountered: ID[];
 }
 
+type QuizSourceKey = keyof QuizState['selectedSources'];
+
 const initialState: QuizState = {
-  selectedChapters: {},
+  selectedSources: { favourites: true },
   definitionsAlreadyEncountered: [],
 };
 
@@ -17,14 +20,14 @@ export const quizSlice = createSlice({
   name: 'quiz',
   initialState,
   reducers: {
-    selectChapter: (state, action: PayloadAction<ID>) => {
-      state.selectedChapters[action.payload] = true;
+    selectSource: (state, action: PayloadAction<QuizSourceKey>) => {
+      state.selectedSources[action.payload] = true;
     },
-    deselectChapter: (state, action: PayloadAction<ID>) => {
-      state.selectedChapters[action.payload] = false;
+    deselectSource: (state, action: PayloadAction<QuizSourceKey>) => {
+      state.selectedSources[action.payload] = false;
     },
-    clearSelectedChapters: (state) => {
-      state.selectedChapters = {};
+    resetSources: (state) => {
+      state.selectedSources = { favourites: true };
     },
     setDefinitionAsEncountered: (state, action: PayloadAction<ID>) => {
       if (!state.definitionsAlreadyEncountered.includes(action.payload)) {
@@ -38,41 +41,56 @@ export const quizSlice = createSlice({
 });
 
 export const {
-  selectChapter,
-  deselectChapter,
-  clearSelectedChapters,
+  selectSource,
+  deselectSource,
+  resetSources,
   setDefinitionAsEncountered,
   clearEncounteredDefinitions,
 } = quizSlice.actions;
 
 export function useQuiz() {
-  return useAppSelector((state: RootState) => state.quiz);
+  return useAppSelector((state: RootState) => ({
+    ...state.quiz,
+    selectedSources:
+      // Proxy used to make `true` the default value if the key is not present
+      new Proxy(state.quiz.selectedSources, {
+        get(selectedSources, key) {
+          return selectedSources[key as QuizSourceKey] !== undefined
+            ? selectedSources[key as QuizSourceKey]
+            : true;
+        },
+      }),
+  }));
 }
 
-export function useToggleChapter() {
+export function useToggleSource() {
   const dispatch = useAppDispatch();
 
-  return (id: ID, isSelected: boolean) =>
-    dispatch(isSelected ? deselectChapter(id) : selectChapter(id));
+  return (id: QuizSourceKey | 'all', isSelected = true) =>
+    id === 'all'
+      ? dispatch(resetSources())
+      : dispatch(isSelected ? deselectSource(id) : selectSource(id));
 }
 
 export function useNextRandomDefinition(definitions: Definition[]) {
   const quiz = useQuiz();
+  const favouriteIDs = useFavouriteIDs();
   const dispatch = useAppDispatch();
 
   const availableDefinitionsSubset = definitions.filter(
     (definition) =>
       // definition is valid if it belongs to the selected chapters...
-      quiz.selectedChapters[definition.chapterId] &&
+      (quiz.selectedSources[definition.chapterId] ||
+        // ...or to the favourites if the favourites source is selected...
+        (quiz.selectedSources.favourites &&
+          favouriteIDs.includes(definition.id))) &&
       // ...and if it hasn't already been encountered
       !quiz.definitionsAlreadyEncountered.includes(definition.id),
   );
 
-  console.log(availableDefinitionsSubset);
-
   // wrap in a useEffect hook, otherwise React complains that it affects other components as well
   useEffect(() => {
-    // If no questions are available and there are encountered questions, clear them
+    // If no definitions are available and there are encountered questions, clear them
     if (
       availableDefinitionsSubset.length === 0 &&
       quiz.definitionsAlreadyEncountered.length > 0
