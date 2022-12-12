@@ -11,7 +11,5 @@ const axiosInstance = axios.create({
 });
 
 export async function fetchData(url: string) {
-  const data = await axiosInstance.get(url).then((res) => res.data);
-
-  return data;
+  return axiosInstance.get(url).then((res) => res.data);
 }

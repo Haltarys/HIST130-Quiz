@@ -2,36 +2,35 @@ import type { Chapter as ChapterType } from 'src/api';
 import { useDefinitions } from 'src/api';
 import { useStore } from 'src/store';
 import DefinitionCard, { Collection } from 'src/components/card';
+import Error from 'src/components/error';
 import ChapterHeader from './ChapterHeader';
-import { LoadingDefinitionCard } from 'src/components/loading';
-import { range } from 'src/utils';
+import { LoadingCardList } from 'src/components/loading';
 
 interface ChapterProps {
   chapter: ChapterType;
-  numberOfPlaceholders?: number;
 }
 
-function Chapter({ chapter, numberOfPlaceholders = 12 }: ChapterProps) {
+function Chapter({ chapter }: ChapterProps) {
   const { isLoading, error, data: definitions } = useDefinitions(chapter.id);
   const { favouriteIDs, onBookmark } = useStore();
 
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <Error>{error.message}</Error>;
 
   return (
     <Collection header={<ChapterHeader chapter={chapter} />}>
-      {isLoading
-        ? range(numberOfPlaceholders).map((_, i) => (
-            <LoadingDefinitionCard key={i} />
-          ))
-        : definitions?.map((definition) => (
-            <DefinitionCard
-              key={definition.id}
-              definition={definition}
-              subheader={`${chapter.title} (page ${definition.pageNumber})`}
-              isFavourite={favouriteIDs.includes(definition.id)}
-              onBookmark={onBookmark}
-            />
-          ))}
+      {isLoading ? (
+        <LoadingCardList />
+      ) : (
+        definitions?.map((definition) => (
+          <DefinitionCard
+            key={definition.id}
+            definition={definition}
+            subheader={`${chapter.title} (page ${definition.pageNumber})`}
+            isFavourite={favouriteIDs.includes(definition.id)}
+            onBookmark={onBookmark}
+          />
+        ))
+      )}
     </Collection>
   );
 }

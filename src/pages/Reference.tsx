@@ -1,5 +1,6 @@
 import { useChapters } from 'src/api';
 import Chapter from 'src/components/chapter';
+import ErrorMessage from 'src/components/error';
 import { LoadingChapters } from 'src/components/loading';
 
 function Reference() {
@@ -7,7 +8,7 @@ function Reference() {
 
   if (isLoading) return <LoadingChapters />;
 
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <ErrorMessage>{error?.message}</ErrorMessage>;
 
   return (
     // wrapped in a fragment, otherwise Typescript whines that the value may be undefined

@@ -1,7 +1,8 @@
 import { useDefinitions } from 'src/api';
 import { useStore } from 'src/store';
-import { Collection } from 'src/components/card';
-import DefinitionCard from 'src/components/card';
+import Error from 'src/components/error';
+import DefinitionCard, { Collection } from 'src/components/card';
+import { LoadingCardList } from 'src/components/loading';
 
 function Favourites() {
   const { isLoading, error, data: definitions } = useDefinitions();
@@ -11,16 +12,14 @@ function Favourites() {
     favouriteIDs.includes(definition.id),
   );
 
-  if (isLoading) return <div>loading favourite definitions...</div>;
-
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <Error>{error?.message}</Error>;
 
   return (
     <Collection header="Favourites">
-      {favourites === undefined ? (
-        <div>loading...</div>
+      {isLoading ? (
+        <LoadingCardList />
       ) : (
-        favourites.map((definition) => (
+        favourites?.map((definition) => (
           <DefinitionCard
             key={definition.id}
             definition={definition}
