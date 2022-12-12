@@ -1,8 +1,7 @@
-// import { useFavourites } from 'src/api';
 import { useDefinitions } from 'src/api';
 import { useStore } from 'src/store';
-import Collection from 'src/components/Collection';
-import DefinitionCard from 'src/components/DefinitionCard';
+import { Collection } from 'src/components/card';
+import DefinitionCard from 'src/components/card';
 
 function Favourites() {
   const { isLoading, error, data: definitions } = useDefinitions();
