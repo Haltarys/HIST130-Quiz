@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import favouritesSlice from 'src/features/favouritesSlice';
-// ...
+import selectedChaptersSlice from 'src/features/selectedChaptersSlice';
+
 const store = configureStore({
   reducer: {
     favourites: favouritesSlice,
+    selectedChapters: selectedChaptersSlice,
   },
 });
 
