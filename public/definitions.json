@@ -1331,7 +1331,7 @@
     "id": 166,
     "term": "Dred Scott decision",
     "pageNumber": 360,
-    "text": "1857 Supreme Court decision that ruled the Missouri Compromise unconstitutional. The Court ruled against slave Dredd Scott, who claimed travels with his master into free states made him and his family free. The decision also denied the federal government the right to exclude slavery in the territories and declared that African Americans were not citizens.",
+    "text": "1857 Supreme Court decision that ruled the Missouri Compromise unconstitutional. The Court ruled against slave Dred Scott, who claimed travels with his master into free states made him and his family free. The decision also denied the federal government the right to exclude slavery in the territories and declared that African Americans were not citizens.",
     "regex": "dred scott decision",
     "chapterId": 13
   },
