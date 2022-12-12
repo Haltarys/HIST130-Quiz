@@ -35,16 +35,6 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
     shouldUnregister: true,
   });
 
-  const onSubmit = handleSubmit(async (data) => {
-    setLoading(true);
-
-    setEmailFeedback(await sendFeedback(data));
-
-    handleClose();
-    setLoading(false);
-    reset();
-  });
-
   return (
     <>
       <Dialog
@@ -56,7 +46,17 @@ function FeedbackDialog({ open, handleClose }: FeedbackDialogProps) {
           if (!loading) handleClose();
         }}
       >
-        <form onSubmit={onSubmit}>
+        <form
+          onSubmit={handleSubmit(async (data) => {
+            setLoading(true);
+
+            setEmailFeedback(await sendFeedback(data));
+
+            handleClose();
+            setLoading(false);
+            reset();
+          })}
+        >
           <DialogTitle>Send feedback</DialogTitle>
           <DialogContent>
             <ObjectField control={control} />
