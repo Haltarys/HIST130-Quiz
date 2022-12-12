@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import grey from '@mui/material/colors/grey';
-import { Definition as DefinitionType, ID } from 'src/api';
+import type { Definition as DefinitionType, ID } from 'src/api';
 
 interface DefinitionCardProps {
   definition: DefinitionType;

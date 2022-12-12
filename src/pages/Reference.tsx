@@ -1,10 +1,10 @@
 import { useChapters } from 'src/api';
-import Chapter from 'src/components/chapter';
+import Chapter, { LoadingChapters } from 'src/components/chapter';
 
 function Reference() {
   const { isLoading, error, data: chapters } = useChapters();
 
-  if (isLoading) return <div>loading chapters...</div>;
+  if (isLoading) return <LoadingChapters />;
 
   if (error) return <div>Error: {error.message}</div>;
 

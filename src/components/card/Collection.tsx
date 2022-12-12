@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import CollectionHeader from './CollectionHeader';
 
 interface CollectionProps {
   header: React.ReactNode;
@@ -12,15 +12,11 @@ function Collection({ header, children }: CollectionProps) {
       container
       spacing={2}
       padding={2}
-      // must be twice as much at the bottom for some reason
+      // must be twice as much at the bottom to look nice for some reason
       paddingBottom={4}
     >
       <Grid item xs={12}>
-        {typeof header === 'string' ? (
-          <Typography variant="h4">{header}</Typography>
-        ) : (
-          header
-        )}
+        <CollectionHeader header={header} />
       </Grid>
       {children}
     </Grid>

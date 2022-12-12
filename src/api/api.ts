@@ -16,7 +16,7 @@ export async function fetchData(url: string) {
   const data = await axiosInstance.get(url).then((res) => res.data);
 
   // TODO: remove sleep
-  // await sleep(3000);
+  await sleep(30 * 1000);
 
   return data;
 }
