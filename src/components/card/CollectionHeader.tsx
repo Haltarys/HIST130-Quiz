@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { LoadingChapterHeader } from 'src/components/chapter';
+import { LoadingChapterHeader } from 'src/components/loading';
 
 interface CollectionHeaderProps {
   header: React.ReactNode;

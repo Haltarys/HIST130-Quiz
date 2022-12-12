@@ -1,4 +1,5 @@
-import { Collection, LoadingDefinitionCard } from 'src/components/card';
+import { Collection } from 'src/components/card';
+import LoadingDefinitionCard from './LoadingDefinitionCard';
 import { range } from 'src/utils';
 
 interface LoadingChaptersProps {
