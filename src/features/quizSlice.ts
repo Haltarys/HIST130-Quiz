@@ -1,7 +1,7 @@
+import { useEffect } from 'react';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState, useAppDispatch, useAppSelector } from 'src/store';
 import type { Definition, ID } from 'src/api/types';
-import { useEffect } from 'react';
 import { useFavouriteIDs } from './favouritesSlice';
 
 interface QuizState {

@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import FeedbackDialog from './components/feedback/FeedbackDialog';
 import { Body, Navbar } from './components/layout';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     // CSS magic to put the scrollbar under the navbar and not next to it
     <Box display="flex" flexDirection="column" height="100%">
       <Navbar />
+      <FeedbackDialog />
       <Box
         display="flex"
         height="100%"

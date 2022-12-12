@@ -1,15 +1,14 @@
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import FeedbackIcon from '@mui/icons-material/Feedback';
+import { useOpenFeedbackDialog } from 'src/features/feedbackSlice';
 
-interface FeedbackButtonProps {
-  handleClick: () => void;
-}
+function FeedbackButton() {
+  const openFeedbackDialog = useOpenFeedbackDialog();
 
-function FeedbackButton({ handleClick }: FeedbackButtonProps) {
   return (
     <Tooltip title="Send Feedback">
-      <IconButton size="large" color="inherit" onClick={handleClick}>
+      <IconButton size="large" color="inherit" onClick={openFeedbackDialog}>
         <FeedbackIcon />
       </IconButton>
     </Tooltip>
