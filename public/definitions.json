@@ -602,6 +602,7 @@
   {
     "id": 75,
     "term": "Common Sense",
+    "htmlTerm": "<span style=\"font-style: italic;\">Common Sense</span>",
     "pageNumber": 157,
     "text": "Pamphlet written by Thomas Paine in 1776 that laid out the case for independence. In it, Paine rejected monarchy, advocating its replacement with republican government based on the consent of the people. The pamphlet influenced public opinion throughout the colonies.",
     "regex": "common sense",
@@ -786,6 +787,7 @@
   {
     "id": 98,
     "term": "Report on Public Credit",
+    "htmlTerm": "<span style=\"font-style: italic;\">Report on Public Credit</span>",
     "pageNumber": 214,
     "text": "Hamilton's January 1790 report recommending that the national debt be funded—but not repaid—at full value. Hamilton's goal was to make the new country creditworthy, not debt-free. Critics of his plan complained that it would benefit speculators.",
     "regex": "report on public credit|public credit report",
@@ -794,6 +796,7 @@
   {
     "id": 99,
     "term": "Report on Manufactures",
+    "htmlTerm": "<span style=\"font-style: italic;\">Report on Manufactures</span>",
     "pageNumber": 216,
     "text": "A proposal by Treasury Secretary Alexander Hamilton in 1791 calling for the federal government to encourage domestic manufacturers with subsidies while imposing tariffs on foreign imports. Congress initially rejected the measure.",
     "regex": "report on manufactures?|manufactures? report",
@@ -874,6 +877,7 @@
   {
     "id": 109,
     "term": "Marbury v. Madison",
+    "htmlTerm": "<span style=\"font-style: italic;\">Marbury v. Madison</span>",
     "pageNumber": 237,
     "text": "1803 Supreme Court case that established the concept of judicial review in finding that parts of the Judiciary Act of 1789 were in conflict with the Constitution. The Supreme Court assumed legal authority to overrule acts of other branches of the government.",
     "regex": "marbury (v\\.?|vs\\.?|versus) madison",
@@ -954,6 +958,7 @@
   {
     "id": 119,
     "term": "feme covert",
+    "htmlTerm": "<span style=\"font-style: italic;\">feme covert</span>",
     "pageNumber": 248,
     "text": "Legal doctrine grounded in British common law that held that a wife's civic life was subsumed by her husband's. Married women lacked independence to own property, make contracts, or keep wages earned. The doctrine shaped women's status in the early Republic.",
     "regex": "feme covert",
@@ -1290,6 +1295,7 @@
   {
     "id": 161,
     "term": "Uncle Tom's Cabin",
+    "htmlTerm": "<span style=\"font-style: italic;\">Uncle Tom's Cabin</span>",
     "pageNumber": 351,
     "text": "Enormously popular antislavery novel written by Harriet Beecher Stowe and published in 1852. It helped to solidify nothern sentiment against slavery and to confirm white Southerner's sense that no sympathy remained for them in the free states.",
     "regex": "uncle tom'?s? cabin",
@@ -1330,6 +1336,7 @@
   {
     "id": 166,
     "term": "Dred Scott decision",
+    "htmlTerm": "<span style=\"font-style: italic;\">Dred Scott</span> decision",
     "pageNumber": 360,
     "text": "1857 Supreme Court decision that ruled the Missouri Compromise unconstitutional. The Court ruled against slave Dred Scott, who claimed travels with his master into free states made him and his family free. The decision also denied the federal government the right to exclude slavery in the territories and declared that African Americans were not citizens.",
     "regex": "dred scott decision",
