@@ -7,14 +7,14 @@
     "dev": "vite --port 3130",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepublish": "yarn run build --base='/HIST130-Quiz/'",
-    "publish": "yarn run gh-pages --dist dist --branch public",
-    "deploy": "yarn run publish"
+    "predeploy": "yarn run build --base='/HIST130-Quiz/'",
+    "deploy": "yarn run gh-pages --dist dist --branch public"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.0",
+    "@mui/lab": "^5.0.0-alpha.75",
     "@mui/material": "^5.5.0",
     "axios": "^0.26.1",
     "react": "^17.0.2",
