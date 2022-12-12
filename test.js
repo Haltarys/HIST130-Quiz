@@ -59,7 +59,7 @@ function checkDone() {
   );
 }
 
-// checkDone();
+checkDone();
 
 function countDefinitions() {
   const counts = {};
@@ -73,3 +73,35 @@ function countDefinitions() {
 }
 
 countDefinitions();
+
+function addDefinitions() {
+  const data = [
+    { term: "Freedmen's Bureau", pageNumber: 405 },
+    { term: 'black code', pageNumber: 407 },
+    { term: 'Civil Rights Act of 1866', pageNumber: 409 },
+    { term: 'Fourteenth Amendment', pageNumber: 409 },
+    { term: 'Military Reconstruction', pageNumber: 411 },
+    { term: 'Fifteenth Amendment', pageNumber: 413 },
+    { term: 'carpetbagger', pageNumber: 414 },
+    { term: 'scalawag', pageNumber: 414 },
+    { term: 'Ku Klux Klan', pageNumber: 415 },
+    { term: 'sharecropping', pageNumber: 417 },
+    { term: 'Redeemers', pageNumber: 421 },
+    { term: 'Compromise of 1877', pageNumber: 424 },
+  ];
+
+  definitions.push(
+    ...data.map(({ term, pageNumber }, i) => ({
+      id: definitions.length + i,
+      term,
+      pageNumber,
+      text: '',
+      chapterId: 15,
+    })),
+  );
+
+  // console.log(definitions.slice(-data.length));
+  console.log(JSON.stringify(definitions, undefined, 2));
+}
+
+// addDefinitions();
