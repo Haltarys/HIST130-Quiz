@@ -9,7 +9,12 @@ function NotFound() {
       <Typography variant="h6">Page not found.</Typography>
       <Typography variant="body1">
         Go to{' '}
-        <Link color="error" to="/" component={RouterLink}>
+        <Link
+          color="error"
+          to="/"
+          component={RouterLink}
+          sx={{ fontWeight: 'bold' }}
+        >
           homepage
         </Link>
         .

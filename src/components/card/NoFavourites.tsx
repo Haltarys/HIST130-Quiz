@@ -26,7 +26,12 @@ function NoFavourites() {
       </Typography>
       <Typography variant="body1">
         Go to the{' '}
-        <Link color="secondary" to="/" component={RouterLink}>
+        <Link
+          color="secondary"
+          to="/"
+          component={RouterLink}
+          sx={{ fontWeight: 'bold' }}
+        >
           homepage
         </Link>{' '}
         and click the{' '}
