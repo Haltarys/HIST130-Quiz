@@ -1,6 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Feedback from 'src/components/feedback';
+import Feedback from 'src/components/feedback/Feedback';
 import NavbarHeader from './NavbarHeader';
 import NavbarTabs from './NavbarTabs';
 import NavbarTitle from './NavbarTitle';

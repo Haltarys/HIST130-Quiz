@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { LoadingChapterHeader } from 'src/components/loading';
+import LoadingCollectionHeader from 'src/components/collection/LoadingCollectionHeader';
 
 interface CollectionHeaderProps {
   header: React.ReactNode;
@@ -7,7 +7,7 @@ interface CollectionHeaderProps {
 
 function CollectionHeader({ header }: CollectionHeaderProps) {
   return header === undefined ? (
-    <LoadingChapterHeader />
+    <LoadingCollectionHeader />
   ) : typeof header === 'string' ? (
     <Typography variant="h4">{header}</Typography>
   ) : (

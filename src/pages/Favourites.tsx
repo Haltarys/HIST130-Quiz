@@ -4,10 +4,11 @@ import {
   useFavouriteIDs,
   useToggleFavourite,
 } from 'src/features/favouritesSlice';
+import LoadingCollection from 'src/components/collection/LoadingCollection';
 import Error from 'src/components/error';
-import DefinitionCard, { Collection } from 'src/components/card';
-import { LoadingCardList } from 'src/components/loading';
-import { NoFavourites } from 'src/components/card';
+import NoFavourites from 'src/components/favourites/NoFavourites';
+import Collection from 'src/components/collection/Collection';
+import DefinitionCard from 'src/components/card/DefinitionCard';
 
 function Favourites() {
   const { isLoading, error, data: definitions } = useDefinitions();
@@ -22,34 +23,31 @@ function Favourites() {
   const favourites = definitions?.filter((definition) =>
     favouriteIDs.includes(definition.id),
   );
-  const areThereFavouritesSaved = favourites && favourites.length > 0;
+
+  if (isLoading || areChaptersLoading) return <LoadingCollection />;
 
   if (error) return <Error>{error?.message}</Error>;
   if (chapterError) return <Error>{chapterError?.message}</Error>;
 
-  return (
-    <Collection header={areThereFavouritesSaved && 'Favourites'}>
-      {isLoading || areChaptersLoading ? (
-        <LoadingCardList />
-      ) : areThereFavouritesSaved ? (
-        favourites.map((definition) => {
-          const chapterTitle = chapters?.find(
-            (chapter) => chapter.id === definition.chapterId,
-          )?.title;
+  if (!favourites || favourites.length === 0) return <NoFavourites />;
 
-          return (
-            <DefinitionCard
-              key={definition.id}
-              definition={definition}
-              subheader={`${chapterTitle} (page ${definition.pageNumber})`}
-              isFavourite={favouriteIDs.includes(definition.id)}
-              onBookmark={toggleFavourite}
-            />
-          );
-        })
-      ) : (
-        <NoFavourites />
-      )}
+  return (
+    <Collection header="Favourites">
+      {favourites.map((definition) => {
+        const chapterTitle = chapters?.find(
+          (chapter) => chapter.id === definition.chapterId,
+        )?.title;
+
+        return (
+          <DefinitionCard
+            key={definition.id}
+            definition={definition}
+            subheader={`${chapterTitle} (page ${definition.pageNumber})`}
+            isFavourite={favouriteIDs.includes(definition.id)}
+            onBookmark={toggleFavourite}
+          />
+        );
+      })}
     </Collection>
   );
 }

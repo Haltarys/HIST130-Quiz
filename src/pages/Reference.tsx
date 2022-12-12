@@ -1,7 +1,7 @@
 import { useChapters } from 'src/api/chapters';
-import Chapter from 'src/components/chapter';
+import Chapter from 'src/components/chapter/Chapter';
 import ErrorMessage from 'src/components/error';
-import { LoadingChapters } from 'src/components/loading';
+import LoadingChapters from 'src/components/chapter/LoadingChapters';
 
 function Reference() {
   const { isLoading, error, data: chapters } = useChapters();

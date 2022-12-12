@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 
-function LoadingChapterHeader() {
+function LoadingCollectionHeader() {
   return (
     <>
       <Skeleton variant="text">
@@ -16,4 +16,4 @@ function LoadingChapterHeader() {
   );
 }
 
-export default LoadingChapterHeader;
+export default LoadingCollectionHeader;
