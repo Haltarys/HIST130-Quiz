@@ -8,4 +8,8 @@ services:
     ports:
       - 3130:3130
     volumes:
-      - ./:/app
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:
