@@ -26,8 +26,8 @@ function Favourites() {
 
   if (isLoading || areChaptersLoading) return <LoadingCollection />;
 
-  if (error) return <Error>{error?.message}</Error>;
-  if (chapterError) return <Error>{chapterError?.message}</Error>;
+  if (error) return <Error>{error.message}</Error>;
+  if (chapterError) return <Error>{chapterError.message}</Error>;
 
   if (!favourites || favourites.length === 0) return <NoFavourites />;
 
