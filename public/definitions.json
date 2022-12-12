@@ -43,7 +43,7 @@
     "id": 5,
     "term": "pueblos",
     "pageNumber": 11,
-    "text": "Multiunit dwellings, storage spaces, and ceremonial centers—often termed kivas— built by ancient Americans in the Southwest for centuries around AD 1000.",
+    "text": "Multiunit dwellings, storage spaces, and ceremonial centers—often termed kivas—built by ancient Americans in the Southwest for centuries around AD 1000.",
     "regex": "pueblos?",
     "chapterId": 0
   },
@@ -779,7 +779,7 @@
     "id": 97,
     "term": "Bill of Rights",
     "pageNumber": 211,
-    "text": "",
+    "text": "The first ten amendments to the Constitution, officially ratified by 1791. The First through Eighth Amendments dealt with individual liberties, and the Ninth and Tenth concerned the boundary between federal and state authority.",
     "regex": "bill of rights?",
     "chapterId": 8
   },
@@ -787,7 +787,7 @@
     "id": 98,
     "term": "Report on Public Credit",
     "pageNumber": 214,
-    "text": "",
+    "text": "Hamilton's January 1790 report recommending that the national debt be funded—but not repaid—at full value. Hamilton's goal was to make the new country creditworthy, not debt-free. Critics of his plan complained that it would benefit speculators.",
     "regex": "report on public credit|public credit report",
     "chapterId": 8
   },
@@ -795,7 +795,7 @@
     "id": 99,
     "term": "Report on Manufactures",
     "pageNumber": 216,
-    "text": "",
+    "text": "A proposal by Treasury Secretary Alexander Hamilton in 1791 calling for the federal government to encourage domestic manufacturers with subsidies while imposing tariffs on foreign imports. Congress initially rejected the measure.",
     "regex": "report on manufactures?|manufactures? report",
     "chapterId": 8
   },
@@ -803,7 +803,7 @@
     "id": 100,
     "term": "Whiskey Rebellion",
     "pageNumber": 217,
-    "text": "",
+    "text": "July 1794 uprising by farmers in western Pennsylvania in response to enforcement of an unpopular excise tax on whiskey. The federal government responded with a military presence that caused dissidents to disperse before blood was shed.",
     "regex": "whiskey rebellion",
     "chapterId": 8
   },
@@ -811,7 +811,7 @@
     "id": 101,
     "term": "Treaty of Greenville",
     "pageNumber": 221,
-    "text": "",
+    "text": "1795 treaty between the United States and various Indian tribes in Ohio. The United States gave the tribes treaty goods valued at $25,000. In exchange, the Indians ceded most of Ohio to the Americans. The treaty brought only temporary peace to the region.",
     "regex": "treaty of greenville|greenville treaty",
     "chapterId": 8
   },
@@ -819,7 +819,7 @@
     "id": 102,
     "term": "Jay Treaty",
     "pageNumber": 223,
-    "text": "",
+    "text": "1795 treaty between the United States and Britain, negociated by John Jay. It secured limited trading rights in the West Indies but failed to ensure timely removal of British forces from western forts and reimbursement for slaves removed by the British after the Revolution.",
     "regex": "jay treaty",
     "chapterId": 8
   },
@@ -827,7 +827,7 @@
     "id": 103,
     "term": "Haitian Revolution",
     "pageNumber": 224,
-    "text": "",
+    "text": "The 1791-1804 conflict involving diverse Haitian participants and armies from three European countries. At its end, Haiti became a free, independent, black-run country. The Haitian Revolution fueled fears of slave insurrections in the United States.",
     "regex": "haitian revolution",
     "chapterId": 8
   },
@@ -835,7 +835,7 @@
     "id": 104,
     "term": "Federalists",
     "pageNumber": 226,
-    "text": "",
+    "text": "One of the two dominant political groups that emerged in the 1790s. Federalist leaders supported Britain in foreign policy and commercial interests at home. Prominent Federalists included George Washington, Alexander Hamilton, and John Adams.",
     "regex": "federalists?",
     "chapterId": 8
   },
@@ -843,7 +843,7 @@
     "id": 105,
     "term": "Republicans",
     "pageNumber": 226,
-    "text": "",
+    "text": "One of the two dominant political groups that emerged in the 1790s. Republicans supported the revolutionaries in France and worried about monarchical Federalists at home. Prominent Republicans included Thomas Jefferson and James Madison.",
     "regex": "republicans?",
     "chapterId": 8
   },
@@ -851,7 +851,7 @@
     "id": 106,
     "term": "XYZ Affair",
     "pageNumber": 228,
-    "text": "",
+    "text": "1797 incident in which American negociators in France were rebuffed for refusing to pay a substantial bribe. The incident led the United States into an undeclared war with France, known as the Quasi-War, which intensified antagonism between Federalists and Republicans.",
     "regex": "xyz affair",
     "chapterId": 8
   },
@@ -859,7 +859,7 @@
     "id": 107,
     "term": "Alien and Sedition Acts",
     "pageNumber": 228,
-    "text": "",
+    "text": "1798 laws passed to suppress political dissent. The Sedition Act criminalized conspiracy and criticism of government leaders. The two Alien Acts extended the waiting period for citizenship and empowered the president to deport or imprison without trial any foreigner deemed a danger.",
     "regex": "(alien and sedition|sedition and alien) acts",
     "chapterId": 8
   },
@@ -867,7 +867,7 @@
     "id": 108,
     "term": "Virginia and Kentucky Resolutions",
     "pageNumber": 228,
-    "text": "",
+    "text": "Condemning the Alien and Sedition Acts, the 1798 resolutions submitted to the federal government by the Virginia and Kentucky state legislatures. The resolutions tested the idea that state legislatures could judge the constitutionality of federal laws and nullify them.",
     "regex": "(virginia and kentucky|kentucky and virginia) resolutions",
     "chapterId": 8
   },
@@ -875,15 +875,15 @@
     "id": 109,
     "term": "Marbury v. Madison",
     "pageNumber": 237,
-    "text": "",
-    "regex": "marbury (v\\.|vs\\.?|versus) madison",
+    "text": "1803 Supreme Court case that established the concept of judicial review in finding that parts of the Judiciary Act of 1789 were in conflict with the Constitution. The Supreme Court assumed legal authority to overrule acts of other branches of the government.",
+    "regex": "marbury (v\\.?|vs\\.?|versus) madison",
     "chapterId": 9
   },
   {
     "id": 110,
     "term": "Louisiana Purchase",
     "pageNumber": 239,
-    "text": "",
+    "text": "1803 purchase of French territory west of the Mississippi River that stretched from the Gulf of Mexico to Canada. The Louisiana Purchase nearly doubled the size of the United States and opened the way for future American expansion west.",
     "regex": "louisiana purchase",
     "chapterId": 9
   },
@@ -891,7 +891,7 @@
     "id": 111,
     "term": "Lewis and Clark expedition",
     "pageNumber": 241,
-    "text": "",
+    "text": "1804-1806 expedition led by Meriwether Lewis and William Clark that explored the trans-Mississippi West for the U.S. government. The expedition's mission was scientific, political, and geographic.",
     "regex": "lewis and clark expedition",
     "chapterId": 9
   },
@@ -899,7 +899,7 @@
     "id": 112,
     "term": "impressment",
     "pageNumber": 243,
-    "text": "",
+    "text": "A British naval practice of seizing sailors on American ships under the claim they were deserters from the British navy. Some 2,500 British and American men were taken by force into service, a grievance that helped propel the United States to declare war on Britain in 1812.",
     "regex": "impressment",
     "chapterId": 9
   },
@@ -907,7 +907,7 @@
     "id": 113,
     "term": "Embargo Act of 1807",
     "pageNumber": 243,
-    "text": "",
+    "text": "Act of Congress that prohibited U.S. ships from traveling to foreign ports and effectively banned overseas trade in an attempt to deter Britain from halting U.S. ships at sea. The embargo caused grave hardships for Americans engaged in overseas commerce.",
     "regex": "embargo act of 1807|1807 embargo act",
     "chapterId": 9
   },
@@ -915,7 +915,7 @@
     "id": 114,
     "term": "battle of Tippecanoe",
     "pageNumber": 245,
-    "text": "",
+    "text": "An attack on Shawnee Indians at Prophetstown on the Tippecanoe River in 1811 by American forces headed by William Henry Harrison, Indiana's territorial governor. The Prophet Tenskwatawa fled with his followers. Tecumseh, his brother, deepened his resolve to make war on the United States.",
     "regex": "battle of tippecanoe|tippecanoe battle",
     "chapterId": 9
   },
@@ -923,7 +923,7 @@
     "id": 115,
     "term": "War Hawks",
     "pageNumber": 245,
-    "text": "",
+    "text": "Young men newly elected to the Congress of 1811 who were eager for war against Britain in order to end impressments, fight Indians, and expand into neighboring British territory. Leaders included Henry Clay of Kentucky and John C. Calhoun of South Carolina.",
     "regex": "war hawks?",
     "chapterId": 9
   },
@@ -931,7 +931,7 @@
     "id": 116,
     "term": "Creek War",
     "pageNumber": 247,
-    "text": "",
+    "text": "Part of the War of 1812 involving the Creek nation in Mississippi Territory and militiamen. General Andrew Jackson 's forces gained victory at the battle of Horseshoe Bend in 1814, forcing the Creeks to sign away much of their land.",
     "regex": "creek war",
     "chapterId": 9
   },
@@ -939,7 +939,7 @@
     "id": 117,
     "term": "battle of New Orleans",
     "pageNumber": 247,
-    "text": "",
+    "text": "The final battle in the War of 1812, fought and won by General Andrew Jackson and his militiamen against the much larger British army in New Orleans. The celebrated battle made no difference since the peace had already been negociated.",
     "regex": "battle of new orleans|new orleans battle",
     "chapterId": 9
   },
@@ -947,7 +947,7 @@
     "id": 118,
     "term": "Hartford Convention",
     "pageNumber": 248,
-    "text": "",
+    "text": "A secret meeting of New England Federalist politicians held in late 1814 to discuss constitutional changes to reduce the South's political power and thus help block policies that injured northern commercial interests.",
     "regex": "hartford convention",
     "chapterId": 9
   },
@@ -955,7 +955,7 @@
     "id": 119,
     "term": "feme covert",
     "pageNumber": 248,
-    "text": "",
+    "text": "Legal doctrine grounded in British common law that held that a wife's civic life was subsumed by her husband's. Married women lacked independence to own property, make contracts, or keep wages earned. The doctrine shaped women's status in the early Republic.",
     "regex": "feme covert",
     "chapterId": 9
   },
@@ -963,7 +963,7 @@
     "id": 120,
     "term": "Missouri Compromise",
     "pageNumber": 254,
-    "text": "",
+    "text": "1820 congressional compromise engineered by Henry Clay that paired Missouri's entrance into the Union as a slave state with Maine's as a free state. The compromise also established Missouri's southern border as the permanent line dividing slave from free states.",
     "regex": "missouri compromise",
     "chapterId": 9
   },
@@ -971,7 +971,7 @@
     "id": 121,
     "term": "Erie Canal",
     "pageNumber": 266,
-    "text": "",
+    "text": "Canal finished in 1825, covering 350 miles between Albany and Buffalo and linking the port of New York City with the entire Great Lakes region. The canal turned New York City into the country's premier commercial city.",
     "regex": "erie canal",
     "chapterId": 10
   },
@@ -979,7 +979,7 @@
     "id": 122,
     "term": "Lowell mills",
     "pageNumber": 267,
-    "text": "",
+    "text": "Water-powered textile mills constructed along the Merrimack River in Lowell, Massachusetts, that pioneered the extensive use of female laborers. By 1836, the eight mills there employed more than five thousand young women, living in boardinghouses under close supervision.",
     "regex": "lowell mills?",
     "chapterId": 10
   },
@@ -987,7 +987,7 @@
     "id": 123,
     "term": "second Bank of the United States",
     "pageNumber": 268,
-    "text": "",
+    "text": "National bank with multiple branches chartered in 1816 for twenty years. Intended to help regulate the economy, the bank became a major issue in Andrew Jackson's reelection campaign in 1832, framed in political rhetoric about aristocracy versus democracy.",
     "regex": "(second|2nd) bank of the united states",
     "chapterId": 10
   },
@@ -995,7 +995,7 @@
     "id": 124,
     "term": "Whigs",
     "pageNumber": 270,
-    "text": "",
+    "text": "Political party that evolved out of the National Republicans after 1834. With a northeastern power base, the Whigs supported federal action to promote commercial development and generally looked favorably on the reform movements associated with the Second Great Awakening.",
     "regex": "whigs?",
     "chapterId": 10
   },
@@ -1003,7 +1003,7 @@
     "id": 125,
     "term": "Democrats",
     "pageNumber": 270,
-    "text": "",
+    "text": "Political party that evolved out of the Democratic Republicans after 1834. Strongest in the South and West, the Democrats embraced Andrew Jackson's vision of limited government, expanded political participation for white men, and the promotion of an ethic individualism.",
     "regex": "democrats?",
     "chapterId": 10
   },
@@ -1011,7 +1011,7 @@
     "id": 126,
     "term": "Indian Removal Act of 1830",
     "pageNumber": 273,
-    "text": "",
+    "text": "Act that directed the mandatory relocation of eastern tribes to territory west of the Mississippi. Jackson insisted his goal was to save the Indians. Indians resisted the controversial act, but in the end most were forced to comply.",
     "regex": "indian removal act of 1830|1830 indian removal act",
     "chapterId": 10
   },
@@ -1019,7 +1019,7 @@
     "id": 127,
     "term": "Trail of Tears",
     "pageNumber": 275,
-    "text": "",
+    "text": "Forced westward journey of Cherokees from their lands in Georgia to present-day Oklahoma in 1838. Despite favorable legal action, the Cherokees endured a 1,200-mile march overseen by federal troops. Nearly a quarter of the Cherokees died en route.",
     "regex": "trail of tears",
     "chapterId": 10
   },
@@ -1027,7 +1027,7 @@
     "id": 128,
     "term": "nullification",
     "pageNumber": 275,
-    "text": "",
+    "text": "Theory asserting that states could nullify acts of Congress that exceeded congressional powers. South Carolina advanced the theory of nullification in 1828 in response to an unfavorable federal tariff. A show of force by Andrew Jackson, combined with tariff revisions, ended the crisis.",
     "regex": "nullification",
     "chapterId": 10
   },
@@ -1035,7 +1035,7 @@
     "id": 129,
     "term": "Second Great Awakening",
     "pageNumber": 279,
-    "text": "",
+    "text": "Unprecedented religious revival in the 1820s and 1830s that promised access to salvation. The Second Great Awakening proved to be a major impetus for reform movements of the era, inspiring efforts to combat drinking, sexual sin, and slavery.",
     "regex": "(second|2nd) great awakening",
     "chapterId": 10
   },
@@ -1043,7 +1043,7 @@
     "id": 130,
     "term": "American Temperance Society",
     "pageNumber": 280,
-    "text": "",
+    "text": "Organization founded in 1826 by Lyman Beecher that linked drinking with poverty, idleness, ill-health, and violence. Temperance lecturers traveled the country gaining converts to the cause. The temperance movement had considerable success, contributing to a sharp drop in American alcohol comsumption.",
     "regex": "american temperance society",
     "chapterId": 10
   },
@@ -1051,7 +1051,7 @@
     "id": 131,
     "term": "New York Female Moral Reform Society",
     "pageNumber": 280,
-    "text": "",
+    "text": "An organization of religious women inspired by the Second Great Awakening to eradicate sexual sin and male licentiousness. Formed in 1833, it spread to hundreds of auxiliaries and worked to curb male licentiousness, prostitution, and seduction.",
     "regex": "new york female moral reform society",
     "chapterId": 10
   },
@@ -1059,7 +1059,7 @@
     "id": 132,
     "term": "panic of 1837",
     "pageNumber": 284,
-    "text": "",
+    "text": "First major economic crisis of the United States that led to several years of hard times from 1837 to 1841. Sudden bankruptcies, contraction of credit, and runs on banks worked hardships nationwide. Causes were multiple and global and not well understood.",
     "regex": "panic of 1837|1837 panic",
     "chapterId": 10
   },
@@ -1067,7 +1067,7 @@
     "id": 133,
     "term": "mechanical reapers",
     "pageNumber": 292,
-    "text": "",
+    "text": "Tools usually powered by horses or oxen that enabled farmers to harvest twelve acres of wheat a day, compared to the two or three acres a day possible with manual harvesting methods.",
     "regex": "mechanical reapers?",
     "chapterId": 11
   },
@@ -1075,7 +1075,7 @@
     "id": 134,
     "term": "American system",
     "pageNumber": 292,
-    "text": "",
+    "text": "The practice of manufacturing and then assembling interchangeable parts. A system that spread quickly across American industries, the use of standardized parts allowed American manufacturers to employ cheap, unskilled workers.",
     "regex": "american system",
     "chapterId": 11
   },
@@ -1083,7 +1083,7 @@
     "id": 135,
     "term": "manifest destiny",
     "pageNumber": 298,
-    "text": "",
+    "text": "Term coined in 1845 by journalist John L. O'Sullivan to justify American expansion. O'Sullivan claimed that it was the nation's \"manifest destiny\" to transport its values and civilization westward. Manifest destiny framed the American conquest of the West as part of a divine plan.",
     "regex": "manifest destiny",
     "chapterId": 11
   },
@@ -1091,7 +1091,7 @@
     "id": 136,
     "term": "Oregon Trail",
     "pageNumber": 298,
-    "text": "",
+    "text": "Route from Independence, Missouri, to Oregon traveled by American settlers starting in the late 1830s. Disease and accidents caused many more deaths along the trail than did Indian attacks, which migrants feared.",
     "regex": "oregon trail",
     "chapterId": 11
   },
@@ -1099,7 +1099,7 @@
     "id": 137,
     "term": "Mormons",
     "pageNumber": 300,
-    "text": "",
+    "text": "Members of the Church of Jesus Christ of Latter-Day Saints founded by Joseph Smith in 1830. Most Americans deemed the Mormons heretics. After Smith's death at the hands of an angry mob in 1844, Brigham Young moved the people to what is now Utah in 1846.",
     "regex": "mormons?",
     "chapterId": 11
   },
@@ -1107,7 +1107,7 @@
     "id": 138,
     "term": "Lone Star Republic",
     "pageNumber": 303,
-    "text": "",
+    "text": "Independent republic, also known as the Republic of Texas, that was established by a rebellion of Texans against Mexican rule. The victory at San Jacinto in April 1836 helped ensure the region's independence and recognition by the United States.",
     "regex": "lone star republic",
     "chapterId": 11
   },
@@ -1115,7 +1115,7 @@
     "id": 139,
     "term": "Treaty of Guadalupe Hidalgo",
     "pageNumber": 308,
-    "text": "",
+    "text": "February 1848 treaty that ended the Mexican-American War. Mexico gave up all claims to Texas north of the Rio Grande and ceded New Mexico and California to the United States. The United States agreed to pay $15 million and to assume American claims against Mexico.",
     "regex": "treaty of guadalupe hidalgo|guadalupe hidalgo treaty",
     "chapterId": 11
   },
@@ -1123,7 +1123,7 @@
     "id": 140,
     "term": "California gold rush",
     "pageNumber": 309,
-    "text": "",
+    "text": "Mining rush initiated by James Marshall's discovery of gold in the foothills of the Sierra Nevada in 1848. The hope of striking it rich drew over 250,000 aspiring miners to California between 1849 and 1852 and accelerated the push for statehood.",
     "regex": "california gold rush|gold rush to california",
     "chapterId": 11
   },
@@ -1131,7 +1131,7 @@
     "id": 141,
     "term": "Oneida community",
     "pageNumber": 312,
-    "text": "",
+    "text": "Utopian community organized by John Humphrey Noyes in New York in 1848. Noyes's opposition to private property led him to denounce marriage as the root of the problem. The community embraced sexual and economic communalism, to the dismay of its mainstream neighbors.",
     "regex": "oneida community",
     "chapterId": 11
   },
@@ -1139,7 +1139,7 @@
     "id": 142,
     "term": "Seneca Falls Declaration of Sentiments",
     "pageNumber": 312,
-    "text": "",
+    "text": "Declaration issued in 1848 at the first national woman's rights convention in the United States, which was held in Seneca Falls, New York. The document adopted the style of the Declaration of Independence and demanded equal rights for women, including the franchise.",
     "regex": "seneca falls declaration of sentiments?",
     "chapterId": 11
   },
@@ -1147,7 +1147,7 @@
     "id": 143,
     "term": "American Colonization Society",
     "pageNumber": 314,
-    "text": "",
+    "text": "An organization dedicated to sending free slaves and other black Americans to Liberia in West Africa. Although some African Americans cooperated with the movement, others campaigned against segregation and discrimination.",
     "regex": "american coloni(z|s)ation society",
     "chapterId": 11
   },
@@ -1155,7 +1155,7 @@
     "id": 144,
     "term": "underground railroad",
     "pageNumber": 314,
-    "text": "",
+    "text": "Network consisting mainly of black homes, black churches, and black neighborhoods that helped slaves escape to the North by supplying shelter, food, and general assistance.",
     "regex": "underground railroad",
     "chapterId": 11
   },
@@ -1163,7 +1163,7 @@
     "id": 145,
     "term": "Mason-Dixon line",
     "pageNumber": 321,
-    "text": "",
+    "text": "A surveyor's mark that had established the boundary between Maryland and Pennsylvania in the colonial times. By the 1830s, the boundary divided the free North and the slave South.",
     "regex": "mason[ -]dixon line",
     "chapterId": 12
   },
@@ -1171,7 +1171,7 @@
     "id": 146,
     "term": "cotton kingdom",
     "pageNumber": 321,
-    "text": "",
+    "text": "Term for the South that reflected the dominance of cotton in the southern economy. Cotton was particularly important in the tier of states from South Carolina west to Texas. Cotton cultivation was the key factor in the growth of slavery.",
     "regex": "cotton kingdom",
     "chapterId": 12
   },
@@ -1179,7 +1179,7 @@
     "id": 147,
     "term": "slave codes",
     "pageNumber": 322,
-    "text": "",
+    "text": "Laws enacted in southern states in the 1820s and 1830s that required the total submission of slaves. Attacks by antislavery activists and by slaves convinced southern legislators that they had to do everything in their power to strengthen the institution of slavery.",
     "regex": "slave codes?",
     "chapterId": 12
   },
@@ -1187,7 +1187,7 @@
     "id": 148,
     "term": "miscegenation",
     "pageNumber": 323,
-    "text": "",
+    "text": "Interracial sex. Proslavery spokesmen played on the fears of whites when they suggested that giving blacks equal rights would lead to miscegenation. In reality, slavery led to considerable sexual abuse of black women by their white masters.",
     "regex": "miscegenation",
     "chapterId": 12
   },
@@ -1195,7 +1195,7 @@
     "id": 149,
     "term": "planter",
     "pageNumber": 323,
-    "text": "",
+    "text": "A substancial landowner who tilled his estate with twenty or more slaves. Planters dominated the social and political world of the South. Their values and ideology influenced the values of all southern whites.",
     "regex": "planter",
     "chapterId": 12
   },
@@ -1203,7 +1203,7 @@
     "id": 150,
     "term": "plantation",
     "pageNumber": 323,
-    "text": "",
+    "text": "Large farm worked by twenty or more slaves. Although small farms were more numerous, plantations produced more than 75 percent of the South's export crops.",
     "regex": "plantation",
     "chapterId": 12
   },
@@ -1211,7 +1211,7 @@
     "id": 151,
     "term": "paternalism",
     "pageNumber": 326,
-    "text": "",
+    "text": "The theory of slavery that emphsized reciprocal duties and obligations between masters and their slaves, with slaves providing labor and obedience and masters providing basic care and direction. Whites employed the concepts of paternalism to deny that the slave system was brutal and exploitative.",
     "regex": "paternalism",
     "chapterId": 12
   },
@@ -1219,7 +1219,7 @@
     "id": 152,
     "term": "chivalry",
     "pageNumber": 328,
-    "text": "",
+    "text": "The South's romantic ideal of male-female relationships. Chivalry's underlying assumptions about the weakness of white women and the protective authority of men resembled the paternalistic defense of slavery.",
     "regex": "chivalry",
     "chapterId": 12
   },
@@ -1227,7 +1227,7 @@
     "id": 153,
     "term": "yeomen",
     "pageNumber": 334,
-    "text": "",
+    "text": "Farmers who owned and worked on their own small plots of land. Yeomen living within the plantation belt were more dependent on planters than were yeomen living in the upcountry, where small farmers dominated.",
     "regex": "yeomen",
     "chapterId": 12
   },
@@ -1235,7 +1235,7 @@
     "id": 154,
     "term": "plantation belt",
     "pageNumber": 334,
-    "text": "",
+    "text": "Flatlands that spread from South Carolina to east Texas and were dominated by large plantations.",
     "regex": "plantation belt",
     "chapterId": 12
   },
@@ -1243,7 +1243,7 @@
     "id": 155,
     "term": "upcountry",
     "pageNumber": 335,
-    "text": "",
+    "text": "The hills and mountains of the South whose higher elevation, colder climate, rugged terrain, and poor transportation made the region less hospitable than the flatlands to slavery and large plantations.",
     "regex": "upcountry",
     "chapterId": 12
   },
@@ -1251,7 +1251,7 @@
     "id": 156,
     "term": "free black",
     "pageNumber": 337,
-    "text": "",
+    "text": "An African American who was not enslaved. Southern whites worried about the increasing numbers of free blacks. In the 1820s and 1830s, state legislatures stemmed the growth of the free black population and shrank the liberty of free blacks.",
     "regex": "free black",
     "chapterId": 12
   },
@@ -1259,7 +1259,7 @@
     "id": 157,
     "term": "Wilmot Proviso",
     "pageNumber": 346,
-    "text": "",
+    "text": "Proposal put forward by Representative David Wilmot of Pennsylvania in August 1846 to ban slavery in territory acquired from the Mexican-American War. The proviso enjoyed widespread support in the North, but Southerners saw it as an attack on their interests.",
     "regex": "wilmot proviso",
     "chapterId": 13
   },
@@ -1267,7 +1267,7 @@
     "id": 158,
     "term": "free labor",
     "pageNumber": 346,
-    "text": "",
+    "text": "Term referring to work conducted free from constraint and according to the laborer's own inclinations and will. The ideal of free labor lay at the heart of the North's argument that slavery should not be extended into the western territories.",
     "regex": "free labor",
     "chapterId": 13
   },
@@ -1275,7 +1275,7 @@
     "id": 159,
     "term": "popular sovereignty",
     "pageNumber": 347,
-    "text": "",
+    "text": "The idea that government is subject to the will of the people. Applied to the territories, popular sovereignty meant that the residents of a territory should determine, through their legislature, whether to allow slavery.",
     "regex": "popular sovereignty",
     "chapterId": 13
   },
@@ -1283,7 +1283,7 @@
     "id": 160,
     "term": "Compromise of 1850",
     "pageNumber": 350,
-    "text": "",
+    "text": "Laws passed in 1850 meant to resolve the dispute over the spread of slavery in the territories. Key elements included the admission of California as a free state and the Fugitive Slave Act. The Compromise soon unraveled.",
     "regex": "compromise of 1850|1850 compromise",
     "chapterId": 13
   },
@@ -1291,7 +1291,7 @@
     "id": 161,
     "term": "Uncle Tom's Cabin",
     "pageNumber": 351,
-    "text": "",
+    "text": "Enormously popular antislavery novel written by Harriet Beecher Stowe and published in 1852. It helped to solidify nothern sentiment against slavery and to confirm white Southerner's sense that no sympathy remained for them in the free states.",
     "regex": "uncle tom'?s? cabin",
     "chapterId": 13
   },
@@ -1299,7 +1299,7 @@
     "id": 162,
     "term": "Fugitive Slave Act",
     "pageNumber": 351,
-    "text": "",
+    "text": "A law included in the Compromise of 1850 to help attract southern support for the legislative package. Its strict provisions for capturing runaway slaves provoked outrage in the North and intensified antislavery sentiment in the region.",
     "regex": "fugitive slave act",
     "chapterId": 13
   },
@@ -1307,7 +1307,7 @@
     "id": 163,
     "term": "Kansas-Nebraska Act",
     "pageNumber": 354,
-    "text": "",
+    "text": "1854 law that divided Indian Territory into Kansas and Nebraska, repealed the Missouri Compromise, and left the new territories to decide the issue of slavery on the basis of popular sovereignty. The law led to bloody fighting in Kansas.",
     "regex": "kansas[ -]nebraska act",
     "chapterId": 13
   },
@@ -1315,7 +1315,7 @@
     "id": 164,
     "term": "Republican Party",
     "pageNumber": 356,
-    "text": "",
+    "text": "Antislavery party formed in 1854 following passage of the Kansas-Nebraska Act. The Republicans attempted to unite all those who opposed the extension of slavery into any territory of the United States.",
     "regex": "republican party",
     "chapterId": 13
   },
@@ -1323,7 +1323,7 @@
     "id": 165,
     "term": "\"Bleeding Kansas\"",
     "pageNumber": 358,
-    "text": "",
+    "text": "Term for the bloody struggle between proslavery and antislavery factions in Kansas following its organization in the fall of 1854. Corrupt election tactics led a proslavery victory, but free-soil Kansans established a rival territorial government, and violence quickly ensued.",
     "regex": "\"?bleeding kansas\"?",
     "chapterId": 13
   },
@@ -1331,7 +1331,7 @@
     "id": 166,
     "term": "Dred Scott decision",
     "pageNumber": 360,
-    "text": "",
+    "text": "1857 Supreme Court decision that ruled the Missouri Compromise unconstitutional. The Court ruled against slave Dredd Scott, who claimed travels with his master into free states made him and his family free. The decision also denied the federal government the right to exclude slavery in the territories and declared that African Americans were not citizens.",
     "regex": "dred scott decision",
     "chapterId": 13
   },
@@ -1339,7 +1339,7 @@
     "id": 167,
     "term": "Lincoln-Douglas debates",
     "pageNumber": 362,
-    "text": "",
+    "text": "Series of debates on the issue of slavery and freedom between Democrat Stephen Douglas and Republican Abraham Lincoln, held as a part of the 1858 Illinois senatorial race. Douglas won the election, but the debates helped catapult Lincoln to national attention.",
     "regex": "lincoln[ -]douglas debates",
     "chapterId": 13
   },
@@ -1347,7 +1347,7 @@
     "id": 168,
     "term": "Confederate States of America",
     "pageNumber": 365,
-    "text": "",
+    "text": "Government formed by Lower South states on February 7, 1861, following their secession from the Union. Secessionists argued that the election of a Republican to the presidency imperiled slavery and the South no longer had political protection within the Union.",
     "regex": "confederate states of america",
     "chapterId": 13
   },
@@ -1355,7 +1355,7 @@
     "id": 169,
     "term": "Fort Sumter",
     "pageNumber": 372,
-    "text": "",
+    "text": "Union fort on an island at the entrance of Charleston harbor in South Carolina. After Confederate leaders learned President Lincoln intended to resupply Fort Sumter, Confederate forces attacked the fort on April 12, 1861, thus marking the start of the Civil War.",
     "regex": "fort sumter",
     "chapterId": 14
   },
@@ -1363,7 +1363,7 @@
     "id": 170,
     "term": "battle of Bull Run (Manassas)",
     "pageNumber": 378,
-    "text": "",
+    "text": "First major battle of the Civil War, fought at a railroad junction in northern Virginia on July 21, 1861. The Union suffered a sobering defeat, while the Confederates felt affirmed in their superiority and the inevitability of Confederate nationhood.",
     "regex": "battle of bull run \\(manassas\\)|battle of bull run,? manassas",
     "chapterId": 14
   },
@@ -1371,23 +1371,23 @@
     "id": 171,
     "term": "battle of Antietam",
     "pageNumber": 379,
-    "text": "",
+    "text": "Battle fought in Maryland on September 17, 1862, between the Union forces of George McClellan and Confederate troops of Robert E. Lee. The battle, a Union victory that left 6,000 dead and 17,000 wounded, was the bloodiest day of the war.",
     "regex": "battle of antietam|antietam",
     "chapterId": 14
   },
   {
     "id": 172,
-    "term": "battle of Siloh",
+    "term": "battle of Shiloh",
     "pageNumber": 382,
-    "text": "",
-    "regex": "battle of siloh|siloh battle",
+    "text": "Battle at Shiloh Church, Tennessee, on April 6-7, 1862, between Albert Sidney Johnston's Confederate forces and Ulysses S. Grant's Union army. The Union army ultimately prevailed, though at great cost to both sides. Shiloh ruined the Confederacy's bid to control the war in the West.",
+    "regex": "battle of shiloh|shiloh battle",
     "chapterId": 14
   },
   {
     "id": 173,
     "term": "Union blockade",
     "pageNumber": 382,
-    "text": "",
+    "text": "The United States' use of its navy to patrol the southern coastline to restrict Confederate access to supplies. Over time, the blockade became increasingly effective and succeeded in depriving the Confederacy of vital supplies.",
     "regex": "union blockade",
     "chapterId": 14
   },
@@ -1395,7 +1395,7 @@
     "id": 174,
     "term": "King Cotton diplomacy",
     "pageNumber": 383,
-    "text": "",
+    "text": "Confederate diplomatic strategy built on the hope that European nations starving for cotton would break the Union blockade and recognize the Confederacy. This strategy failed as Europeans held stores of surplus cotton and developed new sources outside the South.",
     "regex": "king cotton diplomacy",
     "chapterId": 14
   },
@@ -1403,7 +1403,7 @@
     "id": 175,
     "term": "contraband of war",
     "pageNumber": 385,
-    "text": "",
+    "text": "General Benjamin F. Butler's term for runaway slaves, who were considered confiscated property of war, not fugitives, and put to work in the Union army. This policy proved to be a step on the road to emancipation.",
     "regex": "contraband of war|war contraband",
     "chapterId": 14
   },
@@ -1411,7 +1411,7 @@
     "id": 176,
     "term": "Emancipation Proclamation",
     "pageNumber": 386,
-    "text": "",
+    "text": "President Lincoln's proclamation issued on January 1, 1863, declaring all slaves in Confederate-controlled territory free. The proclamation made the Civil War a war for abolition, though its limitations—exemptions for loyal border states and Union-occupied areas of the Confederacy—made some ridicule the act.",
     "regex": "emancipation proclamation",
     "chapterId": 14
   },
@@ -1419,7 +1419,7 @@
     "id": 177,
     "term": "New York city draft riots",
     "pageNumber": 392,
-    "text": "",
+    "text": "Four days of rioting in New York City in July 1863 triggered by efforts to enforce the military draft. Democratic Irish workingmen, suffering economic hardship, infuriated by the draft, and opposed to emancipation, killed at least 105 people, most of them black.",
     "regex": "new york city draft riots",
     "chapterId": 14
   },
@@ -1427,7 +1427,7 @@
     "id": 178,
     "term": "siege of Vicksburg",
     "pageNumber": 393,
-    "text": "",
+    "text": "Six-week siege by General Grant intended to starve out Vicksburg. On July 4, 1863, the 30,000 Confederate troops holding the city surrendered. The victory gave the Union control of the Mississippi River and, together with Gettysburg, marked a major turning point of the war.",
     "regex": "siege of vicksburg|vicksburg siege",
     "chapterId": 14
   },
@@ -1435,7 +1435,7 @@
     "id": 179,
     "term": "battle of Gettysburg",
     "pageNumber": 393,
-    "text": "",
+    "text": "Battle fought at Gettysburg, Pennsylvania (July 1-3, 1863), between the Union forces under General Meade and the Confederate forces under General Lee. The Union emerged victorious, and Lee lost more than one-third of his men. Together with Vicksburg, Gettysburg marked a major turning point in the Civil War.",
     "regex": "battle of gettysburg|gettysburg battle",
     "chapterId": 14
   },
@@ -1443,7 +1443,7 @@
     "id": 180,
     "term": "Sherman's March to the Sea",
     "pageNumber": 395,
-    "text": "",
+    "text": "Military campaign from September through December 1864 in which Union forces under General Sherman marched from Atlanta, Georgia, to the coast at Savannah. Carving a path of destruction as it progressed, Sherman's army aimed at destroying white Southerners' will to continue the war.",
     "regex": "sherman'?s? march to the sea",
     "chapterId": 14
   },
@@ -1451,23 +1451,23 @@
     "id": 181,
     "term": "Freedmen's Bureau",
     "pageNumber": 405,
-    "text": "",
+    "text": "Government organization created in March 1865 to distribute food and clothing to destitute Southerners and to ease the transition of slaves to free persons. Early efforts by the Freedmen's Bureau to distribute land to the newly freed blacks were later overturned by President Andrew Johnson.",
     "regex": "freedmen'?s? bureau",
     "chapterId": 15
   },
   {
     "id": 182,
-    "term": "black code",
+    "term": "black codes",
     "pageNumber": 407,
-    "text": "",
-    "regex": "black code",
+    "text": "Laws passed by state governments in the South in 1865 and 1866 that sought to keep ex-slaves subordinates to whites. At the core of the black codes lay the desire to force freedmen back to the plantations.",
+    "regex": "black codes",
     "chapterId": 15
   },
   {
     "id": 183,
     "term": "Civil Rights Act of 1866",
     "pageNumber": 409,
-    "text": "",
+    "text": "Legislation passed by Congress in 1866 that nullified the black codes and affirmed that black Americans should have equal benefit of the law. This expansion of black rights and federal authority drew a veto from President Andrew Johnson, which Congress later overrode.",
     "regex": "civil rights act of 1866|1866 civil rights act",
     "chapterId": 15
   },
@@ -1475,23 +1475,23 @@
     "id": 184,
     "term": "Fourteenth Amendment",
     "pageNumber": 409,
-    "text": "",
+    "text": "Constitutional amendment passed in 1866 that made all native-born or naturalized persons U.S. citizens and prohibited states from abridging the rights of national citizens. The amendment hoped to guarantee equality before the law for black citizens.",
     "regex": "(fourteenth|14th) amendment",
     "chapterId": 15
   },
   {
     "id": 185,
-    "term": "Military Reconstruction",
+    "term": "Military Reconstruction Act",
     "pageNumber": 411,
-    "text": "",
-    "regex": "military reconstruction",
+    "text": "Congressional act of March 1867 that initiated military rule of the South. Congressional reconstruction divided the ten unreconstructed Confederate states into five military districts, each under the direction of a Union general. It also established the procedure by which unreconstructed states could reenter the Union.",
+    "regex": "military reconstruction act",
     "chapterId": 15
   },
   {
     "id": 186,
     "term": "Fifteenth Amendment",
     "pageNumber": 413,
-    "text": "",
+    "text": "Constitutional amendment passed in February 1869 prohibiting states from depriving any citizen of the right to vote because of \"race, color, or previous condition of servitude.\" It extended black suffrage nationwide. Woman suffrage advocates were disappointed the amendment failed to extend voting rights to women.",
     "regex": "(fifteenth|15th) amendment",
     "chapterId": 15
   },
@@ -1499,15 +1499,15 @@
     "id": 187,
     "term": "carpetbagger",
     "pageNumber": 414,
-    "text": "",
-    "regex": "carpetbagger",
+    "text": "Southerner's pejorative term for nothern migrants who sought opportunity in the South after the Civil War. Northern migrants formed an important part of the southern Republican Party.",
+    "regex": "carpetbaggers?",
     "chapterId": 15
   },
   {
     "id": 188,
     "term": "scalawag",
     "pageNumber": 414,
-    "text": "",
+    "text": "A derogatory term that Southerners applied to Southern white Republicans, who were seen as traitors to the South. Most were yeoman farmers.",
     "regex": "scalawag",
     "chapterId": 15
   },
@@ -1515,7 +1515,7 @@
     "id": 189,
     "term": "Ku Klux Klan",
     "pageNumber": 415,
-    "text": "",
+    "text": "Social club of Confederate veterans that quickly developed into a paramilitary organization supporting Democrats. The Klan went on a rampage of whipping, hanging, shooting, burning, and throat-cutting to defeat Republicans and restore white supremacy. Rapid demobilization of the Union army after the war left only twenty thousand troops to patrol the entire South. Without effective military protection, southern Republicans had to take care of themselves.",
     "regex": "ku klux klan",
     "chapterId": 15
   },
@@ -1523,7 +1523,7 @@
     "id": 190,
     "term": "sharecropping",
     "pageNumber": 417,
-    "text": "",
+    "text": "Labor system that emerged in the South during Reconstruction. Under this system, planters divided their plantations into small farms that freedmen rented, paying with a share of each year's crop. Sharecroppings gave blacks some freedom, but they remained dependent on white landlords and country merchants.",
     "regex": "sharecropping",
     "chapterId": 15
   },
@@ -1531,7 +1531,7 @@
     "id": 191,
     "term": "Redeemers",
     "pageNumber": 421,
-    "text": "",
+    "text": "Name taken by southern Democrats who harnessed white rage in order to overthrow Republican rule and black political power and thus, they believed, save southern civilization.",
     "regex": "redeemers?",
     "chapterId": 15
   },
@@ -1539,7 +1539,7 @@
     "id": 192,
     "term": "Compromise of 1877",
     "pageNumber": 424,
-    "text": "",
+    "text": "Informal agreement in which Democrats agreed not to block Hayes's inauguration and to deal fairly with freedmen, and Hayes vowed not to use the army to uphold the remaining Republican regimes in the South and to provide the South with substancial federal subsidies for railroads. The Compromise brought the Reconstruction era to an end.",
     "regex": "compromise of 1877|1877 compromise",
     "chapterId": 15
   }
