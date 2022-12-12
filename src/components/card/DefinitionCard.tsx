@@ -28,13 +28,15 @@ function DefinitionCard({
       <Card
         elevation={2}
         sx={{
+          display: 'flex',
+          flexDirection: 'column',
           ':hover': {
             boxShadow: 24,
           },
         }}
       >
         <CardHeader title={definition.term} subheader={subheader} />
-        <CardContent>
+        <CardContent sx={{ flexGrow: 1 }}>
           <Typography variant="body2" color="text.secondary">
             {definition.text}
           </Typography>
