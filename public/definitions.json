@@ -4,6 +4,7 @@
     "term": "Beringia",
     "pageNumber": 5,
     "text": "The land brige between Siberia and Alaska that was exposed by the Wisconsin glaciation, allowing people to migrate into the Western Hemisphere.",
+    "regex": "beringia",
     "chapterId": 0
   },
   {
@@ -11,6 +12,7 @@
     "term": "Paleo-Indians",
     "pageNumber": 5,
     "text": "Archaeologists' term for the first migrants into North America and their descendants who spread across the Americas between 15,000 BP and 13,500 BP, approximately.",
+    "regex": "paleo[ -]indians?",
     "chapterId": 0
   },
   {
@@ -18,6 +20,7 @@
     "term": "Clovis point",
     "pageNumber": 6,
     "text": "Distinctively shaped spearhead used by Paleo-Indians and named for the place in Mexico where it was first excavated.",
+    "regex": "clovis point",
     "chapterId": 0
   },
   {
@@ -25,6 +28,7 @@
     "term": "hunter-gatherer",
     "pageNumber": 7,
     "text": "A way of life that involved hunting game and gathering food from naturally occurring sources, as opposed to engaging in agriculture and animal husbandry. Archaid Indians and their descendants survived in North America for centuries as hunter-gatherers.",
+    "regex": "hunter[ -]gatherer",
     "chapterId": 0
   },
   {
@@ -32,6 +36,7 @@
     "term": "Archaic Indians",
     "pageNumber": 7,
     "text": "Hunting and gathering peoples who descended from Paleo-Indians and dominated the Americas from 10,000 BP to between 4000 and 3000 BP, approximately.",
+    "regex": "archaic indians?",
     "chapterId": 0
   },
   {
@@ -39,6 +44,7 @@
     "term": "pueblos",
     "pageNumber": 11,
     "text": "Multiunit dwellings, storage spaces, and ceremonial centers—often termed kivas— built by ancient Americans in the Southwest for centuries around AD 1000.",
+    "regex": "pueblos?",
     "chapterId": 0
   },
   {
@@ -46,6 +52,7 @@
     "term": "Pueblo Bonito",
     "pageNumber": 11,
     "text": "The largest residential and ceremonial site, containing more than 600 rooms and thirty-five kivas, in the major Anasazi cultural center of Chaco Canyon in present-day New Mexico.",
+    "regex": "pueblo bonito",
     "chapterId": 0
   },
   {
@@ -53,6 +60,7 @@
     "term": "burial mounds",
     "pageNumber": 12,
     "text": "Earthen mounds constructed by ancient American peoples, especially throughout the gigantic drainage of the Ohio and Mississippi rivers, after about 2500 BP and often used to bury important leaders and to enact ceremonies.",
+    "regex": "burial mounds?",
     "chapterId": 0
   },
   {
@@ -60,6 +68,7 @@
     "term": "chiefdom",
     "pageNumber": 12,
     "text": "Hierarchical social organization headed by a chief. Archaeologists posit that the Woodland cultures were organized into chiefdoms because the construction of their characteristic burial mounds likely required one person having command over the labor of others.",
+    "regex": "chiefdom",
     "chapterId": 0
   },
   {
@@ -67,6 +76,7 @@
     "term": "Cahokia",
     "pageNumber": 13,
     "text": "The largest ceremonial site in ancient North America, located on the eastern bank of the Missippi River across from present-day St. Louis, where thousands of inhabitants built hundreds of earthen mounds between AD 700 and AD 1400.",
+    "regex": "cahokia",
     "chapterId": 0
   },
   {
@@ -74,6 +84,7 @@
     "term": "Mexica",
     "pageNumber": 18,
     "text": "An empire that stretched from coast to coast across central Mexico and encompassed as many as six million people. Their culture was characterized by steep hierarchy and devotion to the war god Huitzilopochtli.",
+    "regex": "mexica",
     "chapterId": 0
   },
   {
@@ -81,6 +92,7 @@
     "term": "tribute",
     "pageNumber": 19,
     "text": "The goods the Mexica collected from conquered peoples, from basic food products to candidates for human sacrifice. Tribute engendered resentment among the Mexica's subjects, creating a vulnerability the Spaniards would later exploit.",
+    "regex": "tribute",
     "chapterId": 0
   },
   {
@@ -88,6 +100,7 @@
     "term": "Black Death",
     "pageNumber": 25,
     "text": "A disease that in the mid-fourteenth century killed about a third of the European population and left a legacy of increased food and resources for the survivors as well as a sense of a world in precarious balance.",
+    "regex": "black death",
     "chapterId": 1
   },
   {
@@ -95,6 +108,7 @@
     "term": "Reconquest",
     "pageNumber": 27,
     "text": "The centuries-long drive to expel Muslims from the Iberian Peninsula undertaken by the Christian kingdoms of Spain and Portgual. The military victories of the Reconquest helped the Portguese gain greater access to sea routes.",
+    "regex": "reconquest|reconquista",
     "chapterId": 1
   },
   {
@@ -102,6 +116,7 @@
     "term": "Tainos",
     "pageNumber": 29,
     "text": "The Indians who inhabited San Salvador and many Caribbean islands and who were the first people Columbus encountered after making landfall in the New World.",
+    "regex": "tainos",
     "chapterId": 1
   },
   {
@@ -109,6 +124,7 @@
     "term": "Treaty of Torsedillas",
     "pageNumber": 30,
     "text": "The treaty negociated in 1494 to delineate land claims in the New World. The treaty drew an imaginary line west of the Canary Islands; land discovered west of the line belonged to Spain, and land to the east belonged to Portugal.",
+    "regex": "treaty of torsedillas|torsedillas treaty",
     "chapterId": 1
   },
   {
@@ -116,6 +132,7 @@
     "term": "Columbian exchange",
     "pageNumber": 32,
     "text": "The transatlantic exchange of goods, people, and ideas that began when Colombus arrived in the Caribbean, ending the age-old separation of the hemispheres.",
+    "regex": "columbian exchange",
     "chapterId": 1
   },
   {
@@ -123,13 +140,15 @@
     "term": "conquistadors",
     "pageNumber": 35,
     "text": "Term, literally meaning \"conquerors,\" that refers to the Spanish explorers and soldiers who conquered lands in the New World.",
+    "regex": "conquistadors?",
     "chapterId": 1
   },
   {
     "id": 18,
     "term": "Incan empire",
-    "pageNumber": "5",
+    "pageNumber": 5,
     "text": "A region under the control of the Incas and their emperor, Atahualpa, that stretched along the western coast of South America and contained more than nine million people and a wealth in gold and silver.",
+    "regex": "incan empire",
     "chapterId": 1
   },
   {
@@ -137,6 +156,7 @@
     "term": "Acoma pueblo revolt",
     "pageNumber": 36,
     "text": "Revolt against the Spaniards by Indians living at the Acoma pueblo in 1599. Juan de Oñate violently suppressed the uprising, but the Indians revolted again later that year, after which many Spanish settlers returned to Mexico.",
+    "regex": "Acoma pueblo revolt",
     "chapterId": 1
   },
   {
@@ -144,6 +164,7 @@
     "term": "New Spain",
     "pageNumber": 36,
     "text": "Land in the New World held by the Spanish crown. Spain pioneered techniques of using New World colonies to strengthen the kingdom in Europe and would become a model for other European nations.",
+    "regex": "New Spain",
     "chapterId": 1
   },
   {
@@ -151,6 +172,7 @@
     "term": "encomienda",
     "pageNumber": 38,
     "text": "A system for governing used during the Reconquest and in New Spain. It allowed the Spanish encomendero, or \"owner\" of a town, to collect tribute from the town in return for providing law and order and encouraging \"his\" Indians to convert to Christianity.",
+    "regex": "encomienda",
     "chapterId": 1
   },
   {
@@ -158,6 +180,7 @@
     "term": "creoles",
     "pageNumber": 40,
     "text": "Children born to Spanish parents in the New World who, with the peninsulares, made up the tiny portion of the population at the top of the colonial socical hierarchy.",
+    "regex": "creoles?",
     "chapterId": 1
   },
   {
@@ -165,6 +188,7 @@
     "term": "Protestant Reformation",
     "pageNumber": 42,
     "text": "The reform movement that began 1517 with Martin Luther's critiques of the Roman Catholic Church, which precipitated an enduring schism that divided Protestants from Catholics.",
+    "regex": "Protestant Reformation",
     "chapterId": 1
   },
   {
@@ -172,6 +196,7 @@
     "term": "Virginia Company",
     "pageNumber": 49,
     "text": "A joint-stock company organized by London investors in 1606 that received a land grant from King James I in order to establish English colonies in North America. Investors hoped to enrich themselves and strengthen England economically and politically.",
+    "regex": "Virginia Company",
     "chapterId": 2
   },
   {
@@ -179,6 +204,7 @@
     "term": "Jamestown",
     "pageNumber": 49,
     "text": "The first permanent English settlement in North America, established in 1607 by colonists sponsored by the Virginia Company.",
+    "regex": "Jamestown",
     "chapterId": 2
   },
   {
@@ -186,6 +212,7 @@
     "term": "Algonquian Indians",
     "pageNumber": 50,
     "text": "People who inhabited the coastal plain of present-day Virginia, near the Chesapeake Bay, when English colonists first settled the region.",
+    "regex": "Algonquian Indians?",
     "chapterId": 2
   },
   {
@@ -193,6 +220,7 @@
     "term": "royal colony",
     "pageNumber": 52,
     "text": "A colony ruled by a king or queen and governed by officials appointed to serve the monarchy and represent its interests.",
+    "regex": "royal colony",
     "chapterId": 2
   },
   {
@@ -200,6 +228,7 @@
     "term": "House of Burgesses",
     "pageNumber": 53,
     "text": "Organ of government in colonial Virginia made up of an assembly of representatives elected by the colony's male inhabitants. It was established by the Virginia Company and continued by the crown after Virginia was made a royal colony.",
+    "regex": "House of Burgesses",
     "chapterId": 2
   },
   {
@@ -207,6 +236,7 @@
     "term": "indentured servants",
     "pageNumber": 56,
     "text": "Poor immigrants who signed contracts known as indentures, in which they committed to four to seven years of labor in North America in exchange for transportation from England, as well as food and shelter after they arrived in the colony.",
+    "regex": "indentured servants",
     "chapterId": 2
   },
   {
@@ -214,6 +244,7 @@
     "term": "headright",
     "pageNumber": 57,
     "text": "Fifty acres of free land granted by the Virginia Company to planters for each indentured servant they purchased.",
+    "regex": "headright",
     "chapterId": 2
   },
   {
@@ -221,6 +252,7 @@
     "term": "Navigation Acts",
     "pageNumber": 61,
     "text": "English laws passed in the 1650s and 1660s requiring that English colonial goods be shipped through English ports on English ships in order to benefit English merchants, shippes, and seamen.",
+    "regex": "Navigation Acts?",
     "chapterId": 2
   },
   {
@@ -228,6 +260,7 @@
     "term": "Bacon's Rebellion",
     "pageNumber": 61,
     "text": "An unsuccessful rebellion against the colonial government in 1676, led by frontier settler Nathaniel Bacon, that arose when increased violence between Indians and colonists pushing westward was met with government refusal to protect settlers or allow them to settle Indian lands.",
+    "regex": "Bacon'?s? Rebellion",
     "chapterId": 2
   },
   {
@@ -235,6 +268,7 @@
     "term": "slavery",
     "pageNumber": 63,
     "text": "Coerced labor. African Slavery become the most important form of coerced labor in the New World in the seventeenth century.",
+    "regex": "slavery",
     "chapterId": 2
   },
   {
@@ -242,6 +276,7 @@
     "term": "Pueblo revolt",
     "pageNumber": 64,
     "text": "An effective revolt of Pueblo Indians in New Mexico, under the leadership of Popé, against the Spaniards in 1680. Particularly targeting symbols of Christianity, succeeded in killing two-thirds of Spanish missionaries and driving the Spaniards out of New Mexico.",
+    "regex": "Pueblo revolt",
     "chapterId": 2
   },
   {
@@ -249,6 +284,7 @@
     "term": "Barbados",
     "pageNumber": 64,
     "text": "Colonized in the 1630s, this island in the English West Indie became an enormous sugar producer and a source of wealth for England. The island's African slaves quickly became a majority of the island's population despite the deadliness of their work.",
+    "regex": "Barbados",
     "chapterId": 2
   },
   {
@@ -256,6 +292,7 @@
     "term": "English Reformation",
     "pageNumber": 74,
     "text": "Reform effort initiated by King Henry VIII that included banning the Catholic Church and declaring the English monarch head of the new Church of England but little change in doctrine. Henry's primary concern was consolidating his political power.",
+    "regex": "English Reformation",
     "chapterId": 3
   },
   {
@@ -263,6 +300,7 @@
     "term": "Puritans",
     "pageNumber": 74,
     "text": "Dissenters from the Church of England who wanted a genuine Reformation rather than the partial Reformation sought by Henry VIII. The Puritans' religious principles emphasized the importance of an individual's relationship with God developed through Bible study, prayer, and introspection.",
+    "regex": "Puritans?",
     "chapterId": 3
   },
   {
@@ -270,6 +308,7 @@
     "term": "Separatists",
     "pageNumber": 75,
     "text": "People who sought withdrawal from the Church of England. The Pilgrims were Seperatists.",
+    "regex": "Separatists?",
     "chapterId": 3
   },
   {
@@ -277,6 +316,7 @@
     "term": "Calvinism",
     "pageNumber": 79,
     "text": "Christian doctrine of Swiss Protestant theologian John Calvin. Its chief tenet was predestination, the idea that God had determined which human souls would receive eternal salvation. Despite this, Calvinism promoted strict discipline in daily and religious life.",
+    "regex": "Calvinism",
     "chapterId": 3
   },
   {
@@ -284,6 +324,7 @@
     "term": "predestination",
     "pageNumber": 79,
     "text": "Doctrine stating that God determined whether individuals were destined for salvation or damnation before their birth. According to the doctrine, nothing an individual did during his or her lifetime could affect that person's fate.",
+    "regex": "predestination",
     "chapterId": 3
   },
   {
@@ -291,6 +332,7 @@
     "term": "visible saints",
     "pageNumber": 79,
     "text": "Puritans who had passed the tests of conversion and church membership and were therefore thought to be among God's elect.",
+    "regex": "visible saints?",
     "chapterId": 3
   },
   {
@@ -298,6 +340,7 @@
     "term": "antinomians",
     "pageNumber": 81,
     "text": "Individuals who believed that Christians could be saved by faith alone and did not need to act in accordance with God's law as et forth in the Bible. Puritan leaders considered this belief to be a heresy.",
+    "regex": "antinomians?",
     "chapterId": 3
   },
   {
@@ -305,6 +348,7 @@
     "term": "Puritan Revolution",
     "pageNumber": 82,
     "text": "English civil war that arose out of disputes between King Charles I and Parliament, which was dominated by Puritans. The conflict began in 1642 and ended with the execution of Charles I in 1649, resulting in Puritan rules in England until 1660.",
+    "regex": "Puritan Revolution",
     "chapterId": 3
   },
   {
@@ -312,6 +356,7 @@
     "term": "Halfway Covenant",
     "pageNumber": 84,
     "text": "A Puritan compromise established in Massachusetts in 1662 that allowed the unconverted children of visible saints to become \"halfway\" members of the church and baptize their own children even though they were not full members of the church themselves.",
+    "regex": "Half-?way Covenant",
     "chapterId": 3
   },
   {
@@ -319,6 +364,7 @@
     "term": "Quakers",
     "pageNumber": 84,
     "text": "Epithet for members of the Society of Friends. Their belief that God spoke directly to each individual through an \"inner light\" and that neither ministers nor the Bible was essential to discovering God's Word put them in conflict with orthodox Puritans.",
+    "regex": "Quakers?",
     "chapterId": 3
   },
   {
@@ -326,6 +372,7 @@
     "term": "New Netherland",
     "pageNumber": 86,
     "text": "Dutch colony on Manhattan Island. New Amsterdam was its capital and colony headquarters.",
+    "regex": "New Netherland",
     "chapterId": 3
   },
   {
@@ -333,6 +380,7 @@
     "term": "King Philip's War",
     "pageNumber": 92,
     "text": "War begun by Metacomet (King Philip), in which the Wampanoag Indidans attacked colonial settlements in western Massachusetts in 1675. Colonists responded by attacking the Wampanoag and other tribes they believed conspired with them. The colonists prevailed in the brutal war.",
+    "regex": "King Philip'?s? War",
     "chapterId": 3
   },
   {
@@ -340,6 +388,7 @@
     "term": "natural increase",
     "pageNumber": 99,
     "text": "Growth of population through reproduction, as opposed to immigration. In the eighteenth century, natural increase accounted for about three fourths of the American colonies' population growth.",
+    "regex": "natural increase",
     "chapterId": 4
   },
   {
@@ -347,6 +396,7 @@
     "term": "partible inheritance",
     "pageNumber": 101,
     "text": "System of inheritance in which land was divided equally among sons. By the eighteenth century, this practice in Massachusetts had subdivided plots of land into units too small for subsistence, forcing children to move away to find sufficient farmland.",
+    "regex": "partible inheritance",
     "chapterId": 4
   },
   {
@@ -354,6 +404,7 @@
     "term": "Pennsylvania Dutch",
     "pageNumber": 104,
     "text": "Name given by other colonists to German immigrants to the middle colonies; an English corruption of the German term Deutsch. Germans were the largest contingent of migrants from continental Europe to the middle colonies in the eighteenth century.",
+    "regex": "Pennsylvania Dutch",
     "chapterId": 4
   },
   {
@@ -361,6 +412,7 @@
     "term": "Scots-Irish",
     "pageNumber": 105,
     "text": "Protestant immigrants from northern Ireland, Scotland, and northern England. Deteriorating economic conditions in their European homelands contributed to increasing migration to the colonies in the eighteenth century.",
+    "regex": "Scots?[ -]Irish",
     "chapterId": 4
   },
   {
@@ -368,6 +420,7 @@
     "term": "redemptioners",
     "pageNumber": 105,
     "text": "A variant of indentured servants. In this system, a captain agreed to provide passage to Philadelphia, where redemptioners would obtain money for their transportation, usually by selling themselves as servants.",
+    "regex": "redemptioners?",
     "chapterId": 4
   },
   {
@@ -375,6 +428,7 @@
     "term": "Middle Passage",
     "pageNumber": 109,
     "text": "The crossing of the Atlantic by slave ships traveling from West Africa to the Americas. Slaves were crowded together in extremely unhealthful circumstances, and mortality rates were high.",
+    "regex": "Middle Passage",
     "chapterId": 4
   },
   {
@@ -382,6 +436,7 @@
     "term": "new Negroes",
     "pageNumber": 111,
     "text": "Term given to newly arrived African slaves in the colonies. Planters usually maintained only a small number of recent arrivals among their slaves at any given time in order to accelerate their acculturation to their new circumstances.",
+    "regex": "new Negro(es)?",
     "chapterId": 4
   },
   {
@@ -389,6 +444,7 @@
     "term": "Stono Rebellion",
     "pageNumber": 113,
     "text": "Slave uprising in Stono, South Carolina, in 1739 in which a group of slaves armed themselves, plundered six plantations, and killed more than twenty whites. Whites quickly suppressed the rebellion.",
+    "regex": "Stono Rebellion",
     "chapterId": 4
   },
   {
@@ -396,6 +452,7 @@
     "term": "task system",
     "pageNumber": 113,
     "text": "A system of labor in which a slave was assigned a daily task to complete and allowed to do as he wished upon its completion. This system offered more freedom than the carefully supervised gang-labor system.",
+    "regex": "task system",
     "chapterId": 4
   },
   {
@@ -403,6 +460,7 @@
     "term": "Enlightenment",
     "pageNumber": 116,
     "text": "An eighteenth-century philosophical movement that emphasized the use of reason to reevaluate previously accepted doctrines and traditions. Enlightenment ideas encouraged examination of the world and independence of mind.",
+    "regex": "Enlightenment",
     "chapterId": 4
   },
   {
@@ -410,6 +468,7 @@
     "term": "Great Awakening",
     "pageNumber": 117,
     "text": "Wave of revivals that began in Massachusetts and spread through the colonies in the 1730s and 1740s. The movement emphasized vital religious faith and personal choice. It was characterized by large, open-air meetings at which emotional sermons were given by itinerant preachers.",
+    "regex": "Great Awakening",
     "chapterId": 4
   },
   {
@@ -417,6 +476,7 @@
     "term": "presidios",
     "pageNumber": 119,
     "text": "Spanish forts built to block Russian advance into California.",
+    "regex": "presidios?",
     "chapterId": 4
   },
   {
@@ -424,6 +484,7 @@
     "term": "Seven Year's War",
     "pageNumber": 127,
     "text": "War (1754-1763) between Britain and France that ended with British domination of North America; known in America as the French and Indian War. Its high expense laid the foundation for conflict that would lead to the American Revolution.",
+    "regex": "Seven Year'?s? War",
     "chapterId": 5
   },
   {
@@ -431,6 +492,7 @@
     "term": "Pontiac's Rebellion",
     "pageNumber": 132,
     "text": "A coordinated uprising of Native American tribes in 1763 in the Northwest (Great Lakes region) after the end of the Seven Years' War. The rebellion heightened Britain's determination to create a boundary between Americans and Indians, embodied in the proclamation of 1763.",
+    "regex": "Pontiac'?s? Rebellion",
     "chapterId": 5
   },
   {
@@ -438,6 +500,7 @@
     "term": "Sugar (Revenue) Act",
     "pageNumber": 134,
     "text": "1764 British law that decreased the duty on French molasses, making it more attractive for shippers to obey the law, and at the same time raised penalties for smuggling. The Sugar Act regulated trade but was also intended to raise revenue.",
+    "regex": "Sugar \\(?Revenue\\)? Act",
     "chapterId": 5
   },
   {
@@ -445,6 +508,7 @@
     "term": "Stamp Act",
     "pageNumber": 134,
     "text": "1765 British law imposing a tax on all paper used for official documents, for the purpose of raising revenue. Widespread resistance to the Stamp Act led to its repeal in 1766.",
+    "regex": "Stamp Act",
     "chapterId": 5
   },
   {
@@ -452,6 +516,7 @@
     "term": "virtual representation",
     "pageNumber": 135,
     "text": "The theory that all British subjects were represented in Parliament, whether they had elected representatives in that body or not. American colonists rejected the theory of virtual representation, arguing that only direct representatives had the right to tax the colonies.",
+    "regex": "virtual representation",
     "chapterId": 5
   },
   {
@@ -459,6 +524,7 @@
     "term": "Declaratory Act",
     "pageNumber": 138,
     "text": "1766 law issued by Parliament to assert Parliament's unassailable right to legislate for its British colonies \"in all cases whatsoever,\" putting Americans on notice that the simultaneous repeal of the Stamp Act changed nothing in the imperial powers of Britain.",
+    "regex": "Declaratory Act",
     "chapterId": 5
   },
   {
@@ -466,6 +532,7 @@
     "term": "Townshend duties",
     "pageNumber": 138,
     "text": "British law that established new duties on tea, glass, lead, paper, and painters' colors imported into the colonies. The Townshend duties led to boycotts and heightened tensions between Britain and the American colonies.",
+    "regex": "Townshend duties",
     "chapterId": 5
   },
   {
@@ -473,6 +540,7 @@
     "term": "Boston Massacre",
     "pageNumber": 141,
     "text": "March 1770, incident in Boston in which Birtish soldiers fired on an American crowd, killing five. The Boston Massacre became a rallying point for colonists who increasingly saw the British government as tyrannical and illegitimate.",
+    "regex": "Boston Massacre",
     "chapterId": 5
   },
   {
@@ -480,6 +548,7 @@
     "term": "commitees of correspondence",
     "pageNumber": 142,
     "text": "A communications network established among towns in Massachusetts and also among colonial capital towns in 1772-1773 to provide for rapid dissemination of news about important political developments. These committees politicized ordinary townspeople, sparking a revolutionary language of rights and duties.",
+    "regex": "commitees? of correspondence",
     "chapterId": 5
   },
   {
@@ -487,6 +556,7 @@
     "term": "Tea Act of 1773",
     "pageNumber": 142,
     "text": "British act that lowered the existing tax on tea to entice boycotting Americans to buy it. Resistance to the Tea Act led to the passage of the Coercive Acts and imposition of military rule in Massachusetts.",
+    "regex": "Tea Act of 1773|1773 tea act",
     "chapterId": 5
   },
   {
@@ -494,6 +564,7 @@
     "term": "Coercive (Intolerable) Acts",
     "pageNumber": 143,
     "text": "Four British acts of 1774 meant to punish Massachusetts for the destruction of three shiploads of tea. Known in America as the Intolerable Acts, they led to open rebellion in the northern colonies.",
+    "regex": "Coercive \\(?Intolerable\\)? Acts",
     "chapterId": 5
   },
   {
@@ -501,13 +572,15 @@
     "term": "First Continental Congress",
     "pageNumber": 145,
     "text": "September 1774 gathering of colonial delegates in Philadelphia to discuss the crisis precipitated by the Coercive Acts. The congress produced a declaration of rights and an agreement to impose a limited boycott of trade with Britain.",
+    "regex": "(First|1st) Continental Congress",
     "chapterId": 5
   },
   {
     "id": 72,
-    "term": "Second Continental Congress",
+    "term": "(Second|2nd) Continental Congress",
     "pageNumber": 154,
     "text": "Legislative body that governed the United States from May 1775 through the war's duration. It established an army, created its own money, and declared independence once all hope for a peaceful reconciliation with Britain was gone.",
+    "regex": "Second Continental Congress",
     "chapterId": 6
   },
   {
@@ -515,6 +588,7 @@
     "term": "Continental Army",
     "pageNumber": 155,
     "text": "The army created in June 1775 by the Second Continental Congress to oppose the British. Virginian George Washington, commander in chief, had the task of turning the local militias and untrained volunteers into a disciplined army.",
+    "regex": "Continental Army",
     "chapterId": 6
   },
   {
@@ -522,6 +596,7 @@
     "term": "battle of Bunker Bill",
     "pageNumber": 155,
     "text": "Second battle of the Revolutionary War, on June 16, 1775, involving a massive British attack on New England militia units on a hill facing Boston. The militiamen finally yielded the hill, but not before inflicting heavy casualties on the British.",
+    "regex": "battle of Bunker Bill|Bunker Bill battle",
     "chapterId": 6
   },
   {
@@ -529,6 +604,7 @@
     "term": "Common Sense",
     "pageNumber": 157,
     "text": "Pamphlet written by Thomas Paine in 1776 that laid out the case for independence. In it, Paine rejected monarchy, advocating its replacement with republican government based on the consent of the people. The pamphlet influenced public opinion throughout the colonies.",
+    "regex": "Common Sense",
     "chapterId": 6
   },
   {
@@ -536,6 +612,7 @@
     "term": "Declaration of Independance",
     "pageNumber": 158,
     "text": "A document containing philosophical principles and a list of grievances that declared separation from Britain. Adopted by the Second Continental Congress on July 4, 1776, it ended a period of intense debate with moderates still hoping to reconcile with Britain.",
+    "regex": "Declaration of Independance",
     "chapterId": 6
   },
   {
@@ -543,6 +620,7 @@
     "term": "battle of Long Island",
     "pageNumber": 162,
     "text": "First major engagement of the new Continental army, defending against 45,000 British troops newly arrived on western Long Island (today Brooklyn). The Continentals retreated, with high casualties and many taken prisoner.",
+    "regex": "battle of Long Island|Long Island battle",
     "chapterId": 6
   },
   {
@@ -550,6 +628,7 @@
     "term": "Ladies Association",
     "pageNumber": 163,
     "text": "A women's organization in Philadelphia that collected substantial money donations in 1780 to reward Continental soldiers for their service. A woman leader authored a declaration, \"The Sentiments of an American Woman,\" to justify women's entry into political life.",
+    "regex": "Ladies Association",
     "chapterId": 6
   },
   {
@@ -557,6 +636,7 @@
     "term": "loyalists",
     "pageNumber": 164,
     "text": "Colonists who remained loyal to Britain during the Revolutionary War, probably numbering around one fifth of the population in 1776. Colonists remained loyal to Britain for many reasons, and loyalists could be found in every region of the country.",
+    "regex": "loyalists",
     "chapterId": 6
   },
   {
@@ -564,6 +644,7 @@
     "term": "battle of Oriskany",
     "pageNumber": 169,
     "text": "A punishing defeat for Americans in a ravine named Oriskany near Fort Stanwix in New York in August 1777. German American militiamen aided by allied Oneida warriors were ambushed by Mohawk and Seneca Indians, and 400 on the revolutionary side were killed.",
+    "regex": "battle of Oriskany|Oriskany battle",
     "chapterId": 6
   },
   {
@@ -571,6 +652,7 @@
     "term": "battle of Saratoga",
     "pageNumber": 169,
     "text": "A multistage battle in New York ending with the decisive defeat and surrender of British gneral John Burgoyne on October 17, 1777. France was convinced by this victory to throw its official support to the American side of the war.",
+    "regex": "battle of Saratoga|Saratoga battle",
     "chapterId": 6
   },
   {
@@ -578,6 +660,7 @@
     "term": "battle of Yorktown",
     "pageNumber": 177,
     "text": "October 1781 battle that sealed American victory in the Revolutionary War. American troops and a French fleet trapped the British army under the command of General Charles Cornwallis at Yorktown, Virginia.",
+    "regex": "battle of Yorktown|Yorktown battle",
     "chapterId": 6
   },
   {
@@ -585,6 +668,7 @@
     "term": "Treaty (Peace) of Paris, 1783",
     "pageNumber": 177,
     "text": "September 3, 1783, treaty that ended the Revolutionary War. The treaty acknowledged America's independence, set its boundaries, and promised the quick withdrawal of British troops from American soil. It failed to recognize Indians as players in the conflict.",
+    "regex": "Treaty \\(Peace\\) of Paris,? 1783|peace Treaty of Paris,? 1783|1783 peace treaty of paris",
     "chapterId": 6
   },
   {
@@ -592,6 +676,7 @@
     "term": "Articles of Confederation",
     "pageNumber": 183,
     "text": "The written document defining the structure of the government from 1781 to 1788 under which the union was a confederation of equal states, with no executive and limited powers, existing mainly to foster a common defense.",
+    "regex": "Articles of Confederation",
     "chapterId": 7
   },
   {
@@ -599,6 +684,7 @@
     "term": "republicanism",
     "pageNumber": 187,
     "text": "A social philosophy that embraced representative institutions (as opposed to monarchy), a citizenry attuned to civic values above private interests, and a virtuous community in which individuals work to promote the public good.",
+    "regex": "republicanism",
     "chapterId": 7
   },
   {
@@ -606,6 +692,7 @@
     "term": "gradual emancipation",
     "pageNumber": 190,
     "text": "A law passed in five northern states that balanced civil rights against property rights by providing a multistage process for freeing slaves, distinguishing persons already alive from those not yet born and providing benchmark dates when freedom would arrive for each group.",
+    "regex": "gradual emancipation",
     "chapterId": 7
   },
   {
@@ -613,6 +700,7 @@
     "term": "Newburgh Conspiracy",
     "pageNumber": 191,
     "text": "A bogus threatened coup staged by Continental army officers and leaders in the congress in 1782-1783, who hoped that a forceful demand for military back pay and pensions would create pressure for stronger taxation powers. General Washington defused the threat.",
+    "regex": "Newburgh Conspiracy",
     "chapterId": 7
   },
   {
@@ -620,6 +708,7 @@
     "term": "Treaty of Fort Stanwix",
     "pageNumber": 193,
     "text": "1784 treaty with the Iroquois Confederacy that established the primacy of the American confederation (and not the states) to negociate with Indians and resulted in large land cessions in the Ohio Country (northwestern Pennsylvania and eastern Ohio). Tribes not present at Fort Stanwix disavowed the treaty.",
+    "regex": "Treaty of Fort Stanwix|Fort Stanwix treaty",
     "chapterId": 7
   },
   {
@@ -627,6 +716,7 @@
     "term": "Northwest Ordinance",
     "pageNumber": 194,
     "text": "Land Act of 1787 that established a three-stage process by which settled territories would become states. It also banned slavery in the Northwest territory. The ordinance guaranteed that western lands with white population would not become colonial dependencies.",
+    "regex": "Northwest Ordinance",
     "chapterId": 7
   },
   {
@@ -634,6 +724,7 @@
     "term": "Shays's Rebellion",
     "pageNumber": 197,
     "text": "Uprising (1786-1787) led by farmers centered in western Massachusetts. Dissidents protested taxation policies of the eastern elites who controlled the state's government. Shays's Rebellion caused leaders throughout the country to worry about the confederation's ability to handle civil disorder.",
+    "regex": "Shays'?s? Rebellion",
     "chapterId": 7
   },
   {
@@ -641,6 +732,7 @@
     "term": "Virginia Plan",
     "pageNumber": 198,
     "text": "Plan drafted by James Madison, presented at the opening of the Philadelphia constitutional convention. Designed as a powerful three-branch government, with representation in both houses of the congress to be tied to population, this plan eclipsed the voice of small states in national government.",
+    "regex": "Virginia Plan",
     "chapterId": 7
   },
   {
@@ -648,6 +740,7 @@
     "term": "New Jersey Plan",
     "pageNumber": 199,
     "text": "Alternative plan for the structure of the national government drafted by delegates from small states, retaining the confederation's single house congress with one vote per state. It shared with the Virginia plan enhanced congressional powers, including the right to tax, regulate trade, and use force to stop popular uprisings.",
+    "regex": "New Jersey Plan",
     "chapterId": 7
   },
   {
@@ -655,6 +748,7 @@
     "term": "United States Constitution",
     "pageNumber": 199,
     "text": "The document written in 1787 and subsequently ratified by the orginal thirteen states that laid out the governing structure of the United States in separate legislative, executive, and judicial branches.",
+    "regex": "United States Constitution",
     "chapterId": 7
   },
   {
@@ -662,6 +756,7 @@
     "term": "three-fifths clause",
     "pageNumber": 199,
     "text": "Clause in the Constitution that stipulated that all free persons plus \"three-fifths of all other Persons\" would constitute the numerical base for apportioning both representation and taxation. The clause tacitly acknowledged the existence of slavery in the United States.",
+    "regex": "(three[ -]fifths|3\\/5th) clause",
     "chapterId": 7
   },
   {
@@ -669,6 +764,7 @@
     "term": "Federalists",
     "pageNumber": 201,
     "text": "One of the two dominant political groups that emerged in the 1790s. Federalist leaders supported Britain in foreign policy and commercial interests at home. Prominent Federalists included George Washington, Alexander Hamilton, and John Adams.",
+    "regex": "Federalists?",
     "chapterId": 7
   },
   {
@@ -676,6 +772,7 @@
     "term": "Antifederalists",
     "pageNumber": 202,
     "text": "Opponents of ratification of the Constitution. Antifederalists feared that a powerful and distant central government would be out of touch with the needs of citizens. They also complained that the Constitution failed to guarantee individual liberties in a bill of rights.",
+    "regex": "Antifederalists?",
     "chapterId": 7
   },
   {
@@ -683,6 +780,7 @@
     "term": "Bill of Rights",
     "pageNumber": 211,
     "text": "",
+    "regex": "Bill of Rights?",
     "chapterId": 8
   },
   {
@@ -690,6 +788,7 @@
     "term": "Report on Public Credit",
     "pageNumber": 214,
     "text": "",
+    "regex": "Report on Public Credit|Public Credit report",
     "chapterId": 8
   },
   {
@@ -697,6 +796,7 @@
     "term": "Report on Manufactures",
     "pageNumber": 216,
     "text": "",
+    "regex": "Report on Manufactures?|Manufactures? report",
     "chapterId": 8
   },
   {
@@ -704,6 +804,7 @@
     "term": "Whiskey Rebellion",
     "pageNumber": 217,
     "text": "",
+    "regex": "Whiskey Rebellion",
     "chapterId": 8
   },
   {
@@ -711,6 +812,7 @@
     "term": "Treaty of Greenville",
     "pageNumber": 221,
     "text": "",
+    "regex": "Treaty of Greenville|Greenville treaty",
     "chapterId": 8
   },
   {
@@ -718,6 +820,7 @@
     "term": "Jay Treaty",
     "pageNumber": 223,
     "text": "",
+    "regex": "Jay Treaty",
     "chapterId": 8
   },
   {
@@ -725,6 +828,7 @@
     "term": "Haitian Revolution",
     "pageNumber": 224,
     "text": "",
+    "regex": "Haitian Revolution",
     "chapterId": 8
   },
   {
@@ -732,6 +836,7 @@
     "term": "Federalists",
     "pageNumber": 226,
     "text": "",
+    "regex": "Federalists?",
     "chapterId": 8
   },
   {
@@ -739,6 +844,7 @@
     "term": "Republicans",
     "pageNumber": 226,
     "text": "",
+    "regex": "Republicans?",
     "chapterId": 8
   },
   {
@@ -746,6 +852,7 @@
     "term": "XYZ Affair",
     "pageNumber": 228,
     "text": "",
+    "regex": "XYZ Affair",
     "chapterId": 8
   },
   {
@@ -753,6 +860,7 @@
     "term": "Alien and Sedition Acts",
     "pageNumber": 228,
     "text": "",
+    "regex": "(Alien and Sedition|Sedition and Alien) Acts",
     "chapterId": 8
   },
   {
@@ -760,6 +868,7 @@
     "term": "Virginia and Kentucky Resolutions",
     "pageNumber": 228,
     "text": "",
+    "regex": "(Virginia and Kentucky|Kentucky and Virginia) Resolutions",
     "chapterId": 8
   },
   {
@@ -767,6 +876,7 @@
     "term": "Marbury v. Madison",
     "pageNumber": 237,
     "text": "",
+    "regex": "Marbury (v\\.|vs\\.?|versus) Madison",
     "chapterId": 9
   },
   {
@@ -774,6 +884,7 @@
     "term": "Louisiana Purchase",
     "pageNumber": 239,
     "text": "",
+    "regex": "Louisiana Purchase",
     "chapterId": 9
   },
   {
@@ -781,6 +892,7 @@
     "term": "Lewis and Clark expedition",
     "pageNumber": 241,
     "text": "",
+    "regex": "Lewis and Clark expedition",
     "chapterId": 9
   },
   {
@@ -788,6 +900,7 @@
     "term": "impressment",
     "pageNumber": 243,
     "text": "",
+    "regex": "impressment",
     "chapterId": 9
   },
   {
@@ -795,6 +908,7 @@
     "term": "Embargo Act of 1807",
     "pageNumber": 243,
     "text": "",
+    "regex": "Embargo Act of 1807|1807 embargo act",
     "chapterId": 9
   },
   {
@@ -802,6 +916,7 @@
     "term": "battle of Tippecanoe",
     "pageNumber": 245,
     "text": "",
+    "regex": "battle of Tippecanoe|Tippecanoe battle",
     "chapterId": 9
   },
   {
@@ -809,6 +924,7 @@
     "term": "War Hawks",
     "pageNumber": 245,
     "text": "",
+    "regex": "War Hawks?",
     "chapterId": 9
   },
   {
@@ -816,6 +932,7 @@
     "term": "Creek War",
     "pageNumber": 247,
     "text": "",
+    "regex": "Creek War",
     "chapterId": 9
   },
   {
@@ -823,6 +940,7 @@
     "term": "battle of New Orleans",
     "pageNumber": 247,
     "text": "",
+    "regex": "battle of New Orleans|New Orleans battle",
     "chapterId": 9
   },
   {
@@ -830,6 +948,7 @@
     "term": "Hartford Convention",
     "pageNumber": 248,
     "text": "",
+    "regex": "Hartford Convention",
     "chapterId": 9
   },
   {
@@ -837,6 +956,7 @@
     "term": "feme covert",
     "pageNumber": 248,
     "text": "",
+    "regex": "feme covert",
     "chapterId": 9
   },
   {
@@ -844,6 +964,7 @@
     "term": "Missouri Compromise",
     "pageNumber": 254,
     "text": "",
+    "regex": "Missouri Compromise",
     "chapterId": 9
   },
   {
@@ -851,6 +972,7 @@
     "term": "Erie Canal",
     "pageNumber": 266,
     "text": "",
+    "regex": "Erie Canal",
     "chapterId": 10
   },
   {
@@ -858,6 +980,7 @@
     "term": "Lowell mills",
     "pageNumber": 267,
     "text": "",
+    "regex": "Lowell mills?",
     "chapterId": 10
   },
   {
@@ -865,6 +988,7 @@
     "term": "second Bank of the United States",
     "pageNumber": 268,
     "text": "",
+    "regex": "(second|2nd) Bank of the United States",
     "chapterId": 10
   },
   {
@@ -872,6 +996,7 @@
     "term": "Whigs",
     "pageNumber": 270,
     "text": "",
+    "regex": "Whigs?",
     "chapterId": 10
   },
   {
@@ -879,6 +1004,7 @@
     "term": "Democrats",
     "pageNumber": 270,
     "text": "",
+    "regex": "Democrats?",
     "chapterId": 10
   },
   {
@@ -886,6 +1012,7 @@
     "term": "Indian Removal Act of 1830",
     "pageNumber": 273,
     "text": "",
+    "regex": "Indian Removal Act of 1830|1830 indian removal act",
     "chapterId": 10
   },
   {
@@ -893,6 +1020,7 @@
     "term": "Trail of Tears",
     "pageNumber": 275,
     "text": "",
+    "regex": "Trail of Tears",
     "chapterId": 10
   },
   {
@@ -900,6 +1028,7 @@
     "term": "nullification",
     "pageNumber": 275,
     "text": "",
+    "regex": "nullification",
     "chapterId": 10
   },
   {
@@ -907,6 +1036,7 @@
     "term": "Second Great Awakening",
     "pageNumber": 279,
     "text": "",
+    "regex": "(Second|2nd) Great Awakening",
     "chapterId": 10
   },
   {
@@ -914,6 +1044,7 @@
     "term": "American Temperance Society",
     "pageNumber": 280,
     "text": "",
+    "regex": "American Temperance Society",
     "chapterId": 10
   },
   {
@@ -921,6 +1052,7 @@
     "term": "New York Female Moral Reform Society",
     "pageNumber": 280,
     "text": "",
+    "regex": "New York Female Moral Reform Society",
     "chapterId": 10
   },
   {
@@ -928,6 +1060,7 @@
     "term": "panic of 1837",
     "pageNumber": 284,
     "text": "",
+    "regex": "panic of 1837|1837 panic",
     "chapterId": 10
   },
   {
@@ -935,6 +1068,7 @@
     "term": "mechanical reapers",
     "pageNumber": 292,
     "text": "",
+    "regex": "mechanical reapers?",
     "chapterId": 11
   },
   {
@@ -942,6 +1076,7 @@
     "term": "American system",
     "pageNumber": 292,
     "text": "",
+    "regex": "American system",
     "chapterId": 11
   },
   {
@@ -949,6 +1084,7 @@
     "term": "manifest destiny",
     "pageNumber": 298,
     "text": "",
+    "regex": "manifest destiny",
     "chapterId": 11
   },
   {
@@ -956,6 +1092,7 @@
     "term": "Oregon Trail",
     "pageNumber": 298,
     "text": "",
+    "regex": "Oregon Trail",
     "chapterId": 11
   },
   {
@@ -963,6 +1100,7 @@
     "term": "Mormons",
     "pageNumber": 300,
     "text": "",
+    "regex": "Mormons?",
     "chapterId": 11
   },
   {
@@ -970,6 +1108,7 @@
     "term": "Lone Star Republic",
     "pageNumber": 303,
     "text": "",
+    "regex": "Lone Star Republic",
     "chapterId": 11
   },
   {
@@ -977,6 +1116,7 @@
     "term": "Treaty of Guadalupe Hidalgo",
     "pageNumber": 308,
     "text": "",
+    "regex": "Treaty of Guadalupe Hidalgo|Guadalupe Hidalgo treaty",
     "chapterId": 11
   },
   {
@@ -984,6 +1124,7 @@
     "term": "California gold rush",
     "pageNumber": 309,
     "text": "",
+    "regex": "California gold rush|gold rush to california",
     "chapterId": 11
   },
   {
@@ -991,6 +1132,7 @@
     "term": "Oneida community",
     "pageNumber": 312,
     "text": "",
+    "regex": "Oneida community",
     "chapterId": 11
   },
   {
@@ -998,6 +1140,7 @@
     "term": "Seneca Falls Declaration of Sentiments",
     "pageNumber": 312,
     "text": "",
+    "regex": "Seneca Falls Declaration of Sentiments?",
     "chapterId": 11
   },
   {
@@ -1005,6 +1148,7 @@
     "term": "American Colonization Society",
     "pageNumber": 314,
     "text": "",
+    "regex": "American Coloni(z|s)ation Society",
     "chapterId": 11
   },
   {
@@ -1012,6 +1156,7 @@
     "term": "underground railroad",
     "pageNumber": 314,
     "text": "",
+    "regex": "underground railroad",
     "chapterId": 11
   },
   {
@@ -1019,6 +1164,7 @@
     "term": "Mason-Dixon line",
     "pageNumber": 321,
     "text": "",
+    "regex": "Mason[ -]Dixon line",
     "chapterId": 12
   },
   {
@@ -1026,6 +1172,7 @@
     "term": "cotton kingdom",
     "pageNumber": 321,
     "text": "",
+    "regex": "cotton kingdom",
     "chapterId": 12
   },
   {
@@ -1033,6 +1180,7 @@
     "term": "slave codes",
     "pageNumber": 322,
     "text": "",
+    "regex": "slave codes?",
     "chapterId": 12
   },
   {
@@ -1040,6 +1188,7 @@
     "term": "miscegenation",
     "pageNumber": 323,
     "text": "",
+    "regex": "miscegenation",
     "chapterId": 12
   },
   {
@@ -1047,6 +1196,7 @@
     "term": "planter",
     "pageNumber": 323,
     "text": "",
+    "regex": "planter",
     "chapterId": 12
   },
   {
@@ -1054,6 +1204,7 @@
     "term": "plantation",
     "pageNumber": 323,
     "text": "",
+    "regex": "plantation",
     "chapterId": 12
   },
   {
@@ -1061,6 +1212,7 @@
     "term": "paternalism",
     "pageNumber": 326,
     "text": "",
+    "regex": "paternalism",
     "chapterId": 12
   },
   {
@@ -1068,6 +1220,7 @@
     "term": "chivalry",
     "pageNumber": 328,
     "text": "",
+    "regex": "chivalry",
     "chapterId": 12
   },
   {
@@ -1075,13 +1228,15 @@
     "term": "yeomen",
     "pageNumber": 334,
     "text": "",
+    "regex": "yeomen",
     "chapterId": 12
   },
   {
     "id": 154,
-    "term": "plantation  belt",
+    "term": "plantation belt",
     "pageNumber": 334,
     "text": "",
+    "regex": "plantation belt",
     "chapterId": 12
   },
   {
@@ -1089,6 +1244,7 @@
     "term": "upcountry",
     "pageNumber": 335,
     "text": "",
+    "regex": "upcountry",
     "chapterId": 12
   },
   {
@@ -1096,6 +1252,7 @@
     "term": "free black",
     "pageNumber": 337,
     "text": "",
+    "regex": "free black",
     "chapterId": 12
   },
   {
@@ -1103,6 +1260,7 @@
     "term": "Wilmot Proviso",
     "pageNumber": 346,
     "text": "",
+    "regex": "Wilmot Proviso",
     "chapterId": 13
   },
   {
@@ -1110,6 +1268,7 @@
     "term": "free labor",
     "pageNumber": 346,
     "text": "",
+    "regex": "free labor",
     "chapterId": 13
   },
   {
@@ -1117,6 +1276,7 @@
     "term": "popular sovereignty",
     "pageNumber": 347,
     "text": "",
+    "regex": "popular sovereignty",
     "chapterId": 13
   },
   {
@@ -1124,6 +1284,7 @@
     "term": "Compromise of 1850",
     "pageNumber": 350,
     "text": "",
+    "regex": "Compromise of 1850|1850 compromise",
     "chapterId": 13
   },
   {
@@ -1131,6 +1292,7 @@
     "term": "Uncle Tom's Cabin",
     "pageNumber": 351,
     "text": "",
+    "regex": "Uncle Tom'?s? Cabin",
     "chapterId": 13
   },
   {
@@ -1138,6 +1300,7 @@
     "term": "Fugitive Slave Act",
     "pageNumber": 351,
     "text": "",
+    "regex": "Fugitive Slave Act",
     "chapterId": 13
   },
   {
@@ -1145,6 +1308,7 @@
     "term": "Kansas-Nebraska Act",
     "pageNumber": 354,
     "text": "",
+    "regex": "Kansas[ -]Nebraska Act",
     "chapterId": 13
   },
   {
@@ -1152,6 +1316,7 @@
     "term": "Republican Party",
     "pageNumber": 356,
     "text": "",
+    "regex": "Republican Party",
     "chapterId": 13
   },
   {
@@ -1159,6 +1324,7 @@
     "term": "\"Bleeding Kansas\"",
     "pageNumber": 358,
     "text": "",
+    "regex": "\"?Bleeding Kansas\"?",
     "chapterId": 13
   },
   {
@@ -1166,6 +1332,7 @@
     "term": "Dred Scott decision",
     "pageNumber": 360,
     "text": "",
+    "regex": "Dred Scott decision",
     "chapterId": 13
   },
   {
@@ -1173,6 +1340,7 @@
     "term": "Lincoln-Douglas debates",
     "pageNumber": 362,
     "text": "",
+    "regex": "Lincoln[ -]Douglas debates",
     "chapterId": 13
   },
   {
@@ -1180,6 +1348,7 @@
     "term": "Confederate States of America",
     "pageNumber": 365,
     "text": "",
+    "regex": "Confederate States of America",
     "chapterId": 13
   },
   {
@@ -1187,6 +1356,7 @@
     "term": "Fort Sumter",
     "pageNumber": 372,
     "text": "",
+    "regex": "Fort Sumter",
     "chapterId": 14
   },
   {
@@ -1194,6 +1364,7 @@
     "term": "battle of Bull Run (Manassas)",
     "pageNumber": 378,
     "text": "",
+    "regex": "battle of Bull Run \\(Manassas\\)|battle of Bull Run,? Manassas",
     "chapterId": 14
   },
   {
@@ -1201,6 +1372,7 @@
     "term": "battle of Antietam",
     "pageNumber": 379,
     "text": "",
+    "regex": "battle of Antietam|Antietam",
     "chapterId": 14
   },
   {
@@ -1208,6 +1380,7 @@
     "term": "battle of Siloh",
     "pageNumber": 382,
     "text": "",
+    "regex": "battle of Siloh|Siloh battle",
     "chapterId": 14
   },
   {
@@ -1215,6 +1388,7 @@
     "term": "Union blockade",
     "pageNumber": 382,
     "text": "",
+    "regex": "Union blockade",
     "chapterId": 14
   },
   {
@@ -1222,6 +1396,7 @@
     "term": "King Cotton diplomacy",
     "pageNumber": 383,
     "text": "",
+    "regex": "King Cotton diplomacy",
     "chapterId": 14
   },
   {
@@ -1229,6 +1404,7 @@
     "term": "contraband of war",
     "pageNumber": 385,
     "text": "",
+    "regex": "contraband of war|war contraband",
     "chapterId": 14
   },
   {
@@ -1236,6 +1412,7 @@
     "term": "Emancipation Proclamation",
     "pageNumber": 386,
     "text": "",
+    "regex": "Emancipation Proclamation",
     "chapterId": 14
   },
   {
@@ -1243,6 +1420,7 @@
     "term": "New York city draft riots",
     "pageNumber": 392,
     "text": "",
+    "regex": "New York city draft riots",
     "chapterId": 14
   },
   {
@@ -1250,6 +1428,7 @@
     "term": "siege of Vicksburg",
     "pageNumber": 393,
     "text": "",
+    "regex": "siege of Vicksburg|Vicksburg siege",
     "chapterId": 14
   },
   {
@@ -1257,6 +1436,7 @@
     "term": "battle of Gettysburg",
     "pageNumber": 393,
     "text": "",
+    "regex": "battle of Gettysburg|Gettysburg battle",
     "chapterId": 14
   },
   {
@@ -1264,6 +1444,7 @@
     "term": "Sherman's March to the Sea",
     "pageNumber": 395,
     "text": "",
+    "regex": "Sherman'?s? March to the Sea",
     "chapterId": 14
   },
   {
@@ -1271,6 +1452,7 @@
     "term": "Freedmen's Bureau",
     "pageNumber": 405,
     "text": "",
+    "regex": "Freedmen'?s? Bureau",
     "chapterId": 15
   },
   {
@@ -1278,6 +1460,7 @@
     "term": "black code",
     "pageNumber": 407,
     "text": "",
+    "regex": "black code",
     "chapterId": 15
   },
   {
@@ -1285,6 +1468,7 @@
     "term": "Civil Rights Act of 1866",
     "pageNumber": 409,
     "text": "",
+    "regex": "Civil Rights Act of 1866|1866 Civil Rights Act",
     "chapterId": 15
   },
   {
@@ -1292,6 +1476,7 @@
     "term": "Fourteenth Amendment",
     "pageNumber": 409,
     "text": "",
+    "regex": "(Fourteenth|14th) Amendment",
     "chapterId": 15
   },
   {
@@ -1299,6 +1484,7 @@
     "term": "Military Reconstruction",
     "pageNumber": 411,
     "text": "",
+    "regex": "Military Reconstruction",
     "chapterId": 15
   },
   {
@@ -1306,6 +1492,7 @@
     "term": "Fifteenth Amendment",
     "pageNumber": 413,
     "text": "",
+    "regex": "(Fifteenth|15th) Amendment",
     "chapterId": 15
   },
   {
@@ -1313,6 +1500,7 @@
     "term": "carpetbagger",
     "pageNumber": 414,
     "text": "",
+    "regex": "carpetbagger",
     "chapterId": 15
   },
   {
@@ -1320,6 +1508,7 @@
     "term": "scalawag",
     "pageNumber": 414,
     "text": "",
+    "regex": "scalawag",
     "chapterId": 15
   },
   {
@@ -1327,6 +1516,7 @@
     "term": "Ku Klux Klan",
     "pageNumber": 415,
     "text": "",
+    "regex": "Ku Klux Klan",
     "chapterId": 15
   },
   {
@@ -1334,6 +1524,7 @@
     "term": "sharecropping",
     "pageNumber": 417,
     "text": "",
+    "regex": "sharecropping",
     "chapterId": 15
   },
   {
@@ -1341,6 +1532,7 @@
     "term": "Redeemers",
     "pageNumber": 421,
     "text": "",
+    "regex": "Redeemers?",
     "chapterId": 15
   },
   {
@@ -1348,6 +1540,7 @@
     "term": "Compromise of 1877",
     "pageNumber": 424,
     "text": "",
+    "regex": "Compromise of 1877|1877 compromise",
     "chapterId": 15
   }
 ]
