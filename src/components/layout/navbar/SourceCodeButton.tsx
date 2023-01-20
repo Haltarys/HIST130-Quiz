@@ -1,6 +1,6 @@
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
-import CodeIcon from '@mui/icons-material/Code';
+import GithubIcon from '@mui/icons-material/GitHub';
 
 function SourceCodeButton() {
   return (
@@ -12,7 +12,7 @@ function SourceCodeButton() {
         target="_blank"
         rel="norefferer noopener"
       >
-        <CodeIcon />
+        <GithubIcon />
       </IconButton>
     </Tooltip>
   );
